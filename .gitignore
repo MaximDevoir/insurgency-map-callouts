@@ -5,4 +5,4 @@ node_modules
 build
 *.log*
 npm-debug.log
-.code-workspace
+*.code-workspace
