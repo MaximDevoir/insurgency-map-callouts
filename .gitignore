@@ -6,3 +6,6 @@ build
 *.log*
 npm-debug.log
 *.code-workspace
+source/external
+tmp
+.env
