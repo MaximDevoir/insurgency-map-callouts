@@ -1,12 +1,13 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: "[BUG]"
+title: ''
 labels: bug
 assignees: MaximDevoir
 
 ---
 
+<!-- Please search existing issues to avoid creating duplicates. -->
 **Describe the bug**
 A clear and concise description of what the bug is.
 
