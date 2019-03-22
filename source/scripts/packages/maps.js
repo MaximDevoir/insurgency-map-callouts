@@ -1,0 +1,50 @@
+const path = require('path')
+
+const glob = require('glob')
+
+const scriptsDir = path.dirname(__dirname, '..')
+const rootDir = path.join(scriptsDir, '..', '..')
+const mapsDirectory = path.join(rootDir, 'source', 'maps')
+const mapsDirectoryStaged = path.join(rootDir, 'build', 'staged', 'maps')
+
+/**
+ * @returns {string[]} List of all the svg maps in source/maps
+ */
+function getSync() {
+  return glob.sync(path.join(mapsDirectory, '*.svg'))
+}
+
+function get(callback) {
+  return glob(path.join(mapsDirectory, '*.svg'), callback)
+}
+
+async function getStaged(callback) {
+  glob(path.join(mapsDirectoryStaged, '*.svg'), {
+    mark: true
+  }, async (err, files) => {
+    await callback.call(err, files)
+  })
+}
+
+function getStagedSync() {
+  return glob.sync(path.join(mapsDirectoryStaged, '*.svg'))
+}
+
+function getStagedVTFSync() {
+  return glob.sync(path.join(mapsDirectoryStaged, '*.vtf'))
+}
+
+function getStagedRasterSync() {
+  return glob.sync(path.join(mapsDirectoryStaged, '*.png'))
+}
+
+module.exports = {
+  mapsDirectoryStaged,
+  mapsDirectory,
+  getSync,
+  getStagedSync,
+  getStagedVTFSync,
+  getStagedRasterSync,
+  get,
+  getStaged
+}
