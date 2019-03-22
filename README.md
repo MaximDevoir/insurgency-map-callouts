@@ -12,7 +12,7 @@ system.
 
 #### Python 2.7+
 
-* [Python](https://www.python.org/downloads/), at least 2.7.
+* [Python](https://www.python.org/downloads/), recommended `>=3.7.0`.
 * Rossen Georgiev's [VPK](https://pypi.org/project/vpk/) package from
   [PyPI](https://pypi.org/).
 
