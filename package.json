@@ -14,6 +14,7 @@
     "start": "node source/scripts/index.js"
   },
   "dependencies": {
+    "arch": "^2.1.1",
     "btoa": "^1.2.1",
     "chalk": "^2.4.2",
     "child-process-promise": "^2.2.1",
