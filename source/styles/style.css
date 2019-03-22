@@ -15,6 +15,10 @@ text {
   letter-spacing: 1.5px;
 }
 
+.night .callout {
+  fill: #c9ffb8;
+}
+
 .callout {
   opacity: 0.8;
   font-family: Calibri;
