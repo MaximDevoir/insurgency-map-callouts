@@ -9,3 +9,4 @@ npm-debug.log
 source/external
 tmp
 .env
+package-lock.json
