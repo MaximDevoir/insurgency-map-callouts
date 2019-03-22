@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb-base/legacy",
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "semi": [2, "never"],
+    "no-unused-vars": "warn",
+    "no-use-before-define": "warn"
+  }
+}
