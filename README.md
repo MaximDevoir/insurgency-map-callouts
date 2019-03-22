@@ -135,10 +135,19 @@ Callout contributions are welcomed provided that:
 * the callout is clean and friendly
 * the callout makes logical sense
 * the source code for the callout follows the standards in place
+* the callout is for the ambush game mode. 
+  * **Question:** Can I submit a callout for another game mode? 
+  * **Answer:** Yes. Provided that it does not overlap with a callout for the
+    ambush game mode.
 
 Callout contributions **will not be accepted** for:
 
-* night maps
+* night maps.  
+  * **Question:** Why?
+  * **Answer:** To discourage the use of maintaining the same callouts for two
+    maps. If you have a callout, please submit it to only the daytime map. In
+    the future, night map callouts will automatically be generated from the
+    callouts given in the daytime map.
 
 ### Logic
 
