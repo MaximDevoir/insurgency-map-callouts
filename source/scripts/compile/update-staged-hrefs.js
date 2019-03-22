@@ -27,6 +27,10 @@ const rootDir = path.join(scriptsDir, '..', '..')
 const externalDir = path.join(rootDir, 'source', 'external')
 const stylesPath = path.join(rootDir, 'source', 'styles', 'style.css')
 
+require('dotenv').config()
+
+const BUILD_FOR_PRODUCTION = process.env.BUILD_FOR_PRODUCTION || false
+
 // Whether to encode image in base64. Otherwise, uses a relative path.
 const encodeImageWithBase64 = false
 
@@ -62,6 +66,33 @@ function updateStagedHrefs(next) {
 
       return node
     })
+
+    if (BUILD_FOR_PRODUCTION === false) {
+      // Add a debug message in top left corner
+      svgTree.transform(node => {
+        if (node.attributes && node.attributes.id === 'callouts') {
+          node.children.unshift({
+            name: 'text',
+            type: 'element',
+            value: '',
+            attributes: {
+              class: 'callout development_notice',
+              x: '20',
+              y: '50'
+            },
+            children: [{
+              name: '',
+              type: 'text',
+              value: 'DEVELOPMENT MODE',
+              attributes: {},
+              children: []
+            }]
+          })
+        }
+
+        return node
+      })
+    }
 
     svgTree.transform(node => {
       if (node.attributes && node.attributes.id === 'SVGRoot') {
