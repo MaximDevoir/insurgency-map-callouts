@@ -1,0 +1,28 @@
+text {
+  font-size: 10px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.callout.regular {
+  font-size: 1em;
+}
+
+.callout.medium {
+  font-size: 1.1em;
+  letter-spacing: 1.5px;
+}
+
+.callout {
+  opacity: 0.8;
+  font-family: Calibri;
+  fill: #ffffff;
+  fill-opacity: 1;
+  paint-order: stroke;
+  stroke: #000000;
+  stroke-width: 4px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+}
