@@ -3,6 +3,7 @@
 const os = require('os')
 const path = require('path')
 
+const arch = require('arch')
 const chalk = require('chalk')
 const find = require('find')
 const inquirer = require('inquirer')
@@ -65,10 +66,8 @@ function checkOS(nextCheck) {
 function checkArch(nextCheck) {
   process.stdout.write('Checking architecture compatibility')
 
-  const arch = os.arch()
-
-  if (!(arch === 'x86' || arch === 'x64')) {
-    process.stdout.write('. ' + chalk.red(`Architecture (${arch}) not compatible.\n`))
+  if (!(arch() === 'x32' || arch() === 'x64')) {
+    process.stdout.write('. ' + chalk.red(`Architecture (${arch()}) not compatible.\n`))
 
     inquirer.prompt([{
       type: 'confirm',
@@ -84,7 +83,7 @@ function checkArch(nextCheck) {
     })
   } else {
 
-    process.stdout.write('. ' + chalk.green(`Architecture ${arch} is compatible.\n`))
+    process.stdout.write('. ' + chalk.green(`Architecture ${arch()} is compatible.\n`))
 
     return (typeof nextCheck === 'function' && nextCheck(), undefined)
   }
@@ -214,7 +213,7 @@ function discoverVTFLibExecPath(vtflibFolder) {
     return null
   }
 
-  const archDir = path.join(vtflibFolder, os.arch())
+  const archDir = path.join(vtflibFolder, arch())
 
   if (!isDirectory.sync(archDir)) {
     return null
