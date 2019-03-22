@@ -1,14 +1,14 @@
 const chalk = require('chalk')
 
-const rasterizeMaps = require('./build/rasterize-maps')
-const ensureBuildDirectories = require('./build/ensure-directories')
-const convertMapsToVTF = require('./build/convert-to-vtf')
-const cleanBuildDirectories = require('./build/clean-old-build')
-const generateModStructure = require('./build/generate-mod-structure')
-const generateVPK = require('./build/generate-vpk')
-const verifyVPK = require('./build/verify-vpk')
-const stageImages = require('./build/stage-images')
-const updateStagedHrefs = require('./build/update-staged-hrefs')
+const rasterizeMaps = require('./compile/rasterize-maps')
+const ensureBuildDirectories = require('./compile/ensure-directories')
+const convertMapsToVTF = require('./compile/convert-to-vtf')
+const cleanBuildDirectories = require('./compile/clean-old-build')
+const generateModStructure = require('./compile/generate-mod-structure')
+const generateVPK = require('./compile/generate-vpk')
+const verifyVPK = require('./compile/verify-vpk')
+const stageImages = require('./compile/stage-images')
+const updateStagedHrefs = require('./compile/update-staged-hrefs')
 
 function finishedMessage() {
   process.stdout.write('\n\n' + chalk.green('Mod successfully created!\n'))
