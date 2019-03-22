@@ -8,6 +8,7 @@
     "node": ">=10"
   },
   "scripts": {
+    "preinstall": "node source/scripts/preinstall.js",
     "prestart": "node source/scripts/precheck.js",
     "build": "node source/scripts/build.js",
     "start": "node source/scripts/index.js"
