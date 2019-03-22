@@ -10,14 +10,6 @@
 Before using the software, ensure you have all the prerequisite software on your
 system.
 
-#### Microsoft Windows
-
-* Microsoft Visual Studio 2015 (including Express and Community editions) or
-  later. TODO: Verify if this is required, and if so, are only some
-  binaries required? Do we just need A C/C++ compiler tool chain for the
-  platform?
-  * Restart your computer
-
 #### Python 2.7+
 
 * [Python](https://www.python.org/downloads/), at least 2.7.
