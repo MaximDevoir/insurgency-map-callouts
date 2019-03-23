@@ -1,0 +1,28 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="1024px" height="1024px"
+  viewBox="0 0 1024 1024" version="1.1" id="SVGRoot">
+
+  <title>%MAP_NAME% Map Callouts</title>
+
+  <g id="map">
+    <image id="map_%MAP_NAME%" y="0" x="0" preserveAspectRatio="none" height="1024"
+      width="1024" />
+  </g>
+
+  <g id="callouts">
+
+    <g transform="translate(495 537)">
+      <text class="callout">
+        <tspan x="0" dy="0">Example</tspan>
+        <tspan x="0" dy="1.1em">Callout</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(300 537)">
+      <text class="callout">
+        <tspan x="0" dy="0">Another</tspan>
+        <tspan x="0" dy="1.1em">Example</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
