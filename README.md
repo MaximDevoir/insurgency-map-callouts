@@ -3,6 +3,17 @@
 > A package that simplifies the many steps that go into creating a map overviews
 > texture mod for the Steam Workshop.
 
+You can view the progress for map callouts on the
+[milestone](https://github.com/MaximDevoir/insurgency-map-callouts/milestone/1)
+page.
+
+If you want to create callouts for a map, view our [contributing](#contributing)
+documentation and see which maps [still need
+callouts](https://github.com/MaximDevoir/insurgency-map-callouts/issues?q=is%3Aopen+is%3Aissue+label%3Acallouts).
+
+View the released mod at the
+[Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1690177643)
+
 ## Getting Started
 
 ### Prerequisites
