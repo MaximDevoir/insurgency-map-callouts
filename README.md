@@ -16,32 +16,6 @@ View the released mod at the
 
 ## Getting Started
 
-### Prerequisites
-
-Before using the software, ensure you have all the prerequisite software on your
-system.
-
-#### Python 2.7+
-
-* [Python](https://www.python.org/downloads/), recommended `>=3.7.0`.
-* Rossen Georgiev's [VPK](https://pypi.org/project/vpk/) package from
-  [PyPI](https://pypi.org/).
-
-#### Insurgency
-
-* New World Interactive's
-  [Insurgency](https://store.steampowered.com/app/222880/Insurgency/) game.
-
-#### Node
-
-* [Node](https://nodejs.org/en/download/), LTS version `>=10.15.1, < 11.0.0`
-  recommended.
-
-#### Yarn (optional)
-
-* [Yarn](https://yarnpkg.com/lang/en/docs/install/), while **not required**, is
-  recommended if you decide to contribute to the software.
-
 ### Installation
 
 **Note**: Before installing or "git cloning", please ensure sure you have all
@@ -73,6 +47,32 @@ npm run build
 ```
 
 The generated `vpk` file in your `build` folder.
+
+### Prerequisites
+
+Before using the software, ensure you have all the prerequisite software on your
+system.
+
+#### Python 2.7+
+
+* [Python](https://www.python.org/downloads/), recommended `>=3.7.0`.
+* Rossen Georgiev's [VPK](https://pypi.org/project/vpk/) package from
+  [PyPI](https://pypi.org/).
+
+#### Insurgency
+
+* New World Interactive's
+  [Insurgency](https://store.steampowered.com/app/222880/Insurgency/) game.
+
+#### Node
+
+* [Node](https://nodejs.org/en/download/), LTS version `>=10.15.1, < 11.0.0`
+  recommended.
+
+#### Yarn (optional)
+
+* [Yarn](https://yarnpkg.com/lang/en/docs/install/), while **not required**, is
+  recommended if you decide to contribute to the software.
 
 ## Environment Variables
 
