@@ -32,7 +32,7 @@ npm start        # Initializes your map overviews
 
 That's it!
 
-You can now view any `.svg` file from `source/maps` in your web browser.
+You can now view any `.svg` file from `source/maps` in your [web browser](#web-browser).
 
 ### Building
 
@@ -52,6 +52,10 @@ The generated `vpk` file in your `build` folder.
 
 Before using the software, ensure you have all the prerequisite software on your
 system.
+
+#### Web Browser
+
+* The most recent version of popular web browser.
 
 #### Python 2.7+
 
