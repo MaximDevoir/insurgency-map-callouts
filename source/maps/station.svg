@@ -29,14 +29,14 @@
 
     <g transform="translate(525 598) rotate(-30)">
       <text class="callout">
-        <tspan x="0" dy="0">Hut</tspan>
+        <tspan x="0" dy="0">River</tspan>
+        <tspan x="0" dy="1.1em">House</tspan>
       </text>
     </g>
 
     <g transform="translate(480 607)">
       <text class="callout">
-        <tspan x="0" dy="0">Pump</tspan>
-        <tspan x="0" dy="1.1em">Station</tspan>
+        <tspan x="0" dy="0">Hydro</tspan>
       </text>
     </g>
 
@@ -177,10 +177,8 @@
     </g>
 
     <g transform="translate(610 467)">
-      <text class="callout"
-        data-todo="TODO: Rename to something more appropriate.">
-        <tspan x="0" dy="0">A. Mid.</tspan>
-        <tspan x="0" dy="1.1em">Bldg.</tspan>
+      <text class="callout">
+        <tspan x="0" dy="0">Terrace</tspan>
       </text>
     </g>
 
@@ -228,10 +226,9 @@
     </g>
 
     <g transform="translate(570 785) rotate(15)">
-      <text class="callout"
-        data-todo="TODO: Rename to something more appropriate.">
+      <text class="callout">
         <tspan x="0" dy="0">SEC</tspan>
-        <tspan x="0" dy="1.1em">Stilt</tspan>
+        <tspan x="0" dy="1.1em">Stilts</tspan>
       </text>
     </g>
 
@@ -242,16 +239,15 @@
     </g>
 
     <g transform="translate(460 735)">
-      <text class="callout"
-        data-todo="TODO: Rename to something more appropriate.">
+      <text class="callout">
         <tspan x="0" dy="0">SEC</tspan>
-        <tspan x="0" dy="1.1em">Mid.</tspan>
-        <tspan x="0" dy="1.1em">Sentry</tspan>
+        <tspan x="0" dy="1.1em">Spawn</tspan>
+        <tspan x="0" dy="1.1em">Bldg.</tspan>
       </text>
     </g>
 
     <g transform="translate(495 735) rotate(90)">
-      <text class="callout">
+      <text class="callout hide">
         <tspan x="0" dy="0">Ridgeline</tspan>
       </text>
     </g>
