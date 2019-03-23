@@ -11,6 +11,8 @@ If you want to create callouts for a map, view our [contributing](#contributing)
 documentation and see which maps [still need
 callouts](https://github.com/MaximDevoir/insurgency-map-callouts/issues?q=is%3Aopen+is%3Aissue+label%3Acallouts).
 
+To create callouts for a new map, view [this section](#callouts-for-a-new-map).
+
 View the released mod at the
 [Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1690177643)
 
@@ -127,7 +129,22 @@ to other games as well.
 Thank you for your interest. Yes, contributions are welcome. Please read below
 to understand when and how to contribute.
 
-## Submitting Your Contribution
+### Callouts for a New Map
+
+To start callouts on a new map:
+
+1. Create a duplicate of the file `new_map_boilerplate.svg`, located at
+   `source/maps`, and rename it to the name of the map you want to create
+   callouts for, all lowercase. (e.x. you want to make callouts for a map called
+   Ministry, the file name would be `ministry.svg`)
+2. Find and replace all instances of `%MAP_NAME%` in the file you just created
+   to the name of the map (again, all lowercase)
+3. Run `npm start`. This will find the background for the map as well as add
+   styling components to the image.
+
+You're ready to create callouts.
+
+### Submitting Your Contribution
 
 Before you submit your contribution, run `yarn start` (assuming you have Yarn
 from the [prerequisites](#prerequisites)), and commit any changes.
@@ -137,7 +154,7 @@ from the [prerequisites](#prerequisites)), and commit any changes.
 Before contributing, read below to understand if your contribution aligns with
 the goals of the project.
 
-### Callouts
+### Callout Guidelines
 
 Callout contributions are welcomed provided that:
 
