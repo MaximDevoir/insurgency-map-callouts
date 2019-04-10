@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href=".\..\styles\style.css" type="text/css"?>
+
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="1024px" height="1024px"
+  viewBox="0 0 1024 1024" version="1.1" id="SVGRoot">
+
+  <title>sinjar Map Callouts</title>
+
+  <g id="map">
+    <image id="map_sinjar" y="0" x="0" preserveAspectRatio="none" height="1024"
+      width="1024" href=".\..\external\root\materials\overviews\sinjar.jpg" />
+  </g>
+
+  <g id="callouts">
+
+    <g transform="translate(570 280)">
+      <text class="callout">
+        <tspan x="0" dy="0">Alpha Valley</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(550 315)">
+      <text class="callout">
+        <tspan x="0" dy="0">Outpost</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(720 275)">
+      <text class="callout medium">
+        <tspan x="0" dy="0">Bridge</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(710 225)">
+      <text class="callout">
+        <tspan x="0" dy="0">West</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(770 230)">
+      <text class="callout">
+        <tspan x="0" dy="0">East</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(900 480) rotate(-90)">
+      <text class="callout">
+        <tspan x="0" dy="0">Terrace</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(770 425)">
+      <text class="callout">
+        <tspan x="0" dy="0">Gas Station</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(725 430)">
+      <text class="callout">
+        <tspan x="0" dy="0">Auto</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(770 490)">
+      <text class="callout">
+        <tspan x="0" dy="0">Bar</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(690 400)">
+      <text class="callout">
+        <tspan x="0" dy="0">India 5</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(710 610)">
+      <text class="callout">
+        <tspan x="0" dy="0">India 8</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(775 570)">
+      <text class="callout">
+        <tspan x="0" dy="0">Juliett 7</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(468 553)">
+      <text class="callout small">
+        <tspan x="0" dy="0">Mound</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(525 485)">
+      <text class="callout">
+        <tspan x="0" dy="0">Golf 6</tspan>
+        <tspan x="0" dy="1.1em">South</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(555 435)">
+      <text class="callout">
+        <tspan x="0" dy="0">Golf 6</tspan>
+        <tspan x="0" dy="1.1em">North</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(520 390)">
+      <text class="callout">
+        <tspan x="0" dy="0">SEC</tspan>
+        <tspan x="0" dy="1.1em">Bushes</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(655 500)">
+      <text class="callout">
+        <tspan x="0" dy="0">Center</tspan>
+        <tspan x="0" dy="1.1em">Bldg.</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(500 650)">
+      <text class="callout">
+        <tspan x="0" dy="0">Radio</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(550 730)">
+      <text class="callout">
+        <tspan x="0" dy="0">Bravo Valley</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
