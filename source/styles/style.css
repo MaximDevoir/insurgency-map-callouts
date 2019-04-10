@@ -11,6 +11,10 @@ svg {
   visibility: hidden;
 }
 
+.callout.small {
+  font-size: 0.85em;
+}
+
 .callout.regular {
   font-size: 1em;
 }
