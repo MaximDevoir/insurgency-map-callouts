@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href=".\..\styles\style.css" type="text/css"?>
+
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="1024px" height="1024px"
+  viewBox="0 0 1024 1024" version="1.1" id="SVGRoot" class="night">
+
+  <title>Market Night Map Callouts</title>
+
+  <g id="map">
+    <image id="map_market_night" y="0" x="0" preserveAspectRatio="none"
+      height="1024" width="1024"
+      href=".\..\external\root\materials\overviews\market_night.jpg" />
+  </g>
+
+  <g id="callouts" transform="translate(5 35)">
+
+    <g transform="translate(705 310)">
+      <text class="callout">
+        <tspan x="0" dy="0">Garage</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(800 330) rotate(90)">
+      <text class="callout">
+        <tspan x="0" dy="0">Tires</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(677 300) rotate(90)">
+      <text class="callout">
+        <tspan x="0" dy="0">Lumber</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(805 450) rotate(90)">
+      <text class="callout">
+        <tspan x="0" dy="0">Construction</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(300 500)">
+      <text class="callout">
+        <tspan x="0" dy="0">Vents</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(400 340)">
+      <text class="callout">
+        <tspan x="0" dy="0">Pink</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(435 305) rotate(90)">
+      <text class="callout">
+        <tspan x="0" dy="0">Balcony</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(445 390)">
+      <text class="callout">
+        <tspan x="0" dy="0">Kebab</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(440 510)">
+      <text class="callout">
+        <tspan x="0" dy="0">Barber</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(515 350) rotate(-45)">
+      <text class="callout">
+        <tspan x="0" dy="0">Humvee</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(495 440) rotate(90)">
+      <text class="callout">
+        <tspan x="0" dy="0">Blue</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(585 255)">
+      <text class="callout">
+        <tspan x="0" dy="0">Train Tracks</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(600 340)">
+      <text class="callout">
+        <tspan x="0" dy="0">Yard</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(590 380)">
+      <text class="callout">
+        <tspan x="0" dy="0">Windows</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(650 400)">
+      <text class="callout">
+        <tspan x="0" dy="0">Shops</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(630 440) rotate(90)">
+      <text class="callout">
+        <tspan x="0" dy="0">Yellow</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(565 455)">
+      <text class="callout">
+        <tspan x="0" dy="0">Helo</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(640 510)">
+      <text class="callout">
+        <tspan x="0" dy="0">School</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(540 615)">
+      <text class="callout">
+        <tspan x="0" dy="0">Ruins</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(560 675) rotate(-15)">
+      <text class="callout">
+        <tspan x="0" dy="0">Police</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(580 710)">
+      <text class="callout">
+        <tspan x="0" dy="0">Beach</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(720 670)">
+      <text class="callout">
+        <tspan x="0" dy="0">Cafe</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
