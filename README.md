@@ -20,8 +20,8 @@ View the released mod at the
 
 ### Installation
 
-**Note**: Before installing or "git cloning", please ensure sure you have all
-the [`prerequisites`](#prerequisites) and have set your
+**Note**: Before installing or "git cloning", please ensure you have all the
+[`prerequisites`](#prerequisites) and have set your
 [`GAME_LOCATION`](#game_location) environment variable.
 
 To begin working on the maps, run:
@@ -123,6 +123,11 @@ as easy as possible. For games that store their map overview textures in
 Infamy](https://store.steampowered.com/app/447820/Day_of_Infamy/), less than 5
 lines of code need to be changed. And with a little more tweaking, it can be adapted
 to other games as well.
+
+
+```bash
+TODO: Add directory structure and information regarding directories.
+```
 
 ## Contributing
 
