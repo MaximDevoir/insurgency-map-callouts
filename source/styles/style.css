@@ -19,7 +19,17 @@ svg {
   font-size: 1em;
 }
 
+
+.anchor-middle {
+  text-anchor: middle;
+}
+
 .callout.medium {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+}
+
+.callout.large {
   font-size: 1.8em;
   letter-spacing: 2px;
 }
