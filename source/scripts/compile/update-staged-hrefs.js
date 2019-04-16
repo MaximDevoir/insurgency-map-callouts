@@ -29,16 +29,20 @@ const stylesPath = path.join(rootDir, 'source', 'styles', 'style.css')
 
 require('dotenv').config()
 
-const BUILD_FOR_PRODUCTION = process.env.BUILD_FOR_PRODUCTION || false
+const BUILD_FOR_PRODUCTION = process.env.BUILD_FOR_PRODUCTION.toLowerCase() === 'true'
 
 // Whether to encode image in base64. Otherwise, uses a relative path.
 const encodeImageWithBase64 = false
-
 
 function updateStagedHrefs(next) {
   process.stdout.write('\n\nUpdating map hrefs\n')
 
   const mapList = maps.getStagedSync()
+
+  process.stdout.write('[' + chalk.keyword('yellow')('info') + '] '
+    + 'Build for production? '
+    + (BUILD_FOR_PRODUCTION ? 'True.' : 'False, adding development notice to each map.')
+    + '\n')
 
   mapList.forEach(mapPath => {
     const svgTree = new SVGAST(mapPath)
