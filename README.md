@@ -124,6 +124,7 @@ Infamy](https://store.steampowered.com/app/447820/Day_of_Infamy/), less than 5
 lines of code need to be changed. And with a little more tweaking, it can be adapted
 to other games as well.
 
+## Directory Structure
 
 ```bash
 TODO: Add directory structure and information regarding directories.
