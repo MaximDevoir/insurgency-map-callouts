@@ -19,9 +19,15 @@ async function rasterizeMaps(next) {
 
     // eslint-disable-next-line no-restricted-syntax
     for (const map of mapList) {
+      const mapName = path.basename(map, '.svg')
+
+      if (mapName === 'new_map_boilerplate') {
+        // eslint-disable-next-line no-continue
+        continue
+      }
+
       // eslint-disable-next-line no-await-in-loop
       const res = await converter.convertFile(map)
-      const mapName = path.basename(map, '.svg')
       const post = ` Rasterized map ${mapName}\n`
       process.stdout.write('[' + chalk.green('success') + ']' + post)
 
