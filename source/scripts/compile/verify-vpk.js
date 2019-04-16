@@ -10,10 +10,11 @@ const buildDir = path.join(rootDir, 'build')
 const defaultEnvFile = path.join(rootDir, '.env')
 require('dotenv').config(defaultEnvFile)
 
+const BUILD_FOR_PRODUCTION = process.env.BUILD_FOR_PRODUCTION.toLowerCase() === 'true'
 
 function verifyVPKGenerated(next) {
   const modName = process.env.MOD_NAME
-  const generatedVPKPath = path.join(buildDir, modName + '.vpk')
+  const generatedVPKPath = path.join(buildDir, (BUILD_FOR_PRODUCTION ? '' : 'development-') + modName + '.vpk')
 
   process.stdout.write('\n\nVerifying VPK\n')
 

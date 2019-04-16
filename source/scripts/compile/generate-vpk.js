@@ -16,6 +16,7 @@ require('dotenv').config(defaultEnvFile)
 const modName = process.env.MOD_NAME
 const GAME_LOCATION = process.env.GAME_LOCATION
 const VPK = path.join(GAME_LOCATION, 'bin', 'vpk.exe')
+const BUILD_FOR_PRODUCTION = process.env.BUILD_FOR_PRODUCTION.toLowerCase() === 'true'
 
 function generateVPK(next) {
   const modDir = path.join(buildDir, modName)
@@ -50,6 +51,15 @@ function generateVPK(next) {
     process.stdout.write(chalk.red('\nExiting now\n'))
 
     process.exit(1)
+  }
+
+  if (BUILD_FOR_PRODUCTION === false) {
+    process.stdout.write('\n[' + chalk.keyword('yellow')('info') + '] BUILD_FOR_PRODUCTION is FALSE\n')
+    process.stdout.write('[' + chalk.keyword('yellow')('info') + '] Amending development tag to filename.\n')
+    const generatedVPKPath = path.join(buildDir, `${modName}.vpk`)
+    const developmentVPKPath = path.join(buildDir, `development-${modName}.vpk`)
+
+    fs.renameSync(generatedVPKPath, developmentVPKPath)
   }
 
   const callNext = typeof next === 'function'
