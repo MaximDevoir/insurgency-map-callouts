@@ -27,27 +27,26 @@
       </text>
     </g>
 
-    <g transform="translate(525 598) rotate(-30)">
-      <text class="callout">
-        <tspan x="0" dy="0">River</tspan>
-        <tspan x="0" dy="1.1em">House</tspan>
+    <g transform="translate(535 595) rotate(-30)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Hut</tspan>
       </text>
     </g>
 
-    <g transform="translate(480 607)">
-      <text class="callout">
+    <g transform="translate(490 610)">
+      <text class="callout anchor-middle">
         <tspan x="0" dy="0">Hydro</tspan>
       </text>
     </g>
 
-    <g transform="translate(420 650)">
-      <text class="callout">
-        <tspan x="0" dy="0">Lodge</tspan>
+    <g transform="translate(430 650)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Red Roof</tspan>
       </text>
     </g>
 
-    <g transform="translate(395 675)">
-      <text class="callout">
+    <g transform="translate(405 675)">
+      <text class="callout anchor-middle">
         <tspan x="0" dy="0">Shed</tspan>
       </text>
     </g>
@@ -60,7 +59,7 @@
 
     <g transform="translate(505 515) rotate(-90)">
       <text class="callout">
-        <tspan x="0" dy="0">Balcony</tspan>
+        <tspan x="0" dy="0">Lower</tspan>
       </text>
     </g>
 
@@ -72,7 +71,7 @@
 
     <g transform="translate(545 445) rotate(60)">
       <text class="callout">
-        <tspan x="0" dy="0">Docks</tspan>
+        <tspan x="0" dy="0">Fish</tspan>
       </text>
     </g>
 
@@ -82,14 +81,20 @@
       </text>
     </g>
 
-    <g transform="translate(647 383) rotate(-15)">
+    <g transform="translate(672 343) rotate(90)">
       <text class="callout">
+        <tspan x="0" dy="0">A. Courtyard</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(647 383) rotate(-15)">
+      <text class="callout hide">
         <tspan x="0" dy="0">A. Van</tspan>
       </text>
     </g>
 
     <g transform="translate(647 362)">
-      <text class="callout">
+      <text class="callout hide">
         <tspan x="0" dy="0">A. Car</tspan>
       </text>
     </g>
@@ -123,6 +128,37 @@
         <tspan x="0" dy="0">Bridge</tspan>
       </text>
     </g>
+
+    <g transform="translate(420 190)">
+      <text class="callout">
+        <tspan x="0" dy="0">Apartments</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(390 90)">
+      <text class="callout">
+        <tspan x="0" dy="0">Compound</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(500 100)">
+      <text class="callout">
+        <tspan x="0" dy="0">Outpost</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(360 165) rotate(-5)">
+      <text class="callout">
+        <tspan x="0" dy="0">Creek</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(490 290)">
+      <text class="callout">
+        <tspan x="0" dy="0">Mechanic</tspan>
+      </text>
+    </g>
+
 
     <g transform="translate(500 375)">
       <text class="callout">
@@ -176,14 +212,20 @@
       </text>
     </g>
 
-    <g transform="translate(610 467)">
+    <g transform="translate(595 480)">
       <text class="callout">
-        <tspan x="0" dy="0">Terrace</tspan>
+        <tspan x="0" dy="0">Chimney</tspan>
       </text>
     </g>
 
-    <g transform="translate(650 490)">
+    <g transform="translate(630 465) rotate(20)">
       <text class="callout">
+        <tspan x="0" dy="0">Burnt Car</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(665 500)">
+      <text class="callout anchor-middle small hide">
         <tspan x="0" dy="0">Trash</tspan>
       </text>
     </g>
@@ -202,26 +244,33 @@
     </g>
 
     <g transform="translate(595 635)">
-      <text class="callout">
+      <text class="callout hide">
         <tspan x="0" dy="0">South</tspan>
       </text>
     </g>
 
-    <g transform="translate(555 690)">
+    <g transform="translate(550 680)">
       <text class="callout">
-        <tspan x="0" dy="0">East</tspan>
+        <tspan x="0" dy="0">Food</tspan>
+        <tspan x="0" dy="1.1em">Court</tspan>
       </text>
     </g>
 
-    <g transform="translate(620 705)">
-      <text class="callout">
-        <tspan x="0" dy="0">West</tspan>
+    <g transform="translate(630 705)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Workshop</tspan>
       </text>
     </g>
 
-    <g transform="translate(565 745)">
+    <g transform="translate(560 745)">
       <text class="callout">
-        <tspan x="0" dy="0">North</tspan>
+        <tspan x="0" dy="0">Cottage</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(625 810)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">France</tspan>
       </text>
     </g>
 
@@ -229,6 +278,12 @@
       <text class="callout">
         <tspan x="0" dy="0">SEC</tspan>
         <tspan x="0" dy="1.1em">Stilts</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(540 790)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Reeds</tspan>
       </text>
     </g>
 
@@ -251,5 +306,12 @@
         <tspan x="0" dy="0">Ridgeline</tspan>
       </text>
     </g>
+
+    <g transform="translate(380  980)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Vehicle Block</tspan>
+      </text>
+    </g>
+
   </g>
 </svg>
