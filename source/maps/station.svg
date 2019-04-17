@@ -159,7 +159,6 @@
       </text>
     </g>
 
-
     <g transform="translate(500 375)">
       <text class="callout">
         <tspan x="0" dy="0">Candles</tspan>
@@ -312,6 +311,5 @@
         <tspan x="0" dy="0">Vehicle Block</tspan>
       </text>
     </g>
-
   </g>
 </svg>
