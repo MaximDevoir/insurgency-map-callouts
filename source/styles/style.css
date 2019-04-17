@@ -15,6 +15,10 @@ svg {
   font-size: 0.85em;
 }
 
+.callout.extra-small {
+  font-size: 0.6em;
+}
+
 .callout.regular {
   font-size: 1em;
 }
