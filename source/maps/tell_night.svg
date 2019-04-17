@@ -22,10 +22,40 @@
       </text>
     </g>
 
+    <g transform="translate(215 70)">
+      <text class="callout anchor-middle" style="font-size: 2em;">
+        <tspan x="0" dy="0">☺</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(325 180)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Lounge</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(220 240)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Fountain</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(180 260)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Mattresses (under)</tspan>
+      </text>
+    </g>
+
     <g transform="translate(220 315)">
       <text class="callout anchor-middle">
         <tspan x="0" dy="0">Charlie 4</tspan>
         <tspan x="0" dy="1.1em">Tree</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(70 300)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Column Pit</tspan>
       </text>
     </g>
 
@@ -37,7 +67,7 @@
     </g>
 
     <g transform="translate(287 410) rotate(90)">
-      <text class="callout">
+      <text class="callout hide">
         <tspan x="0" dy="0">Ruins Ramp</tspan>
       </text>
     </g>
@@ -55,16 +85,22 @@
       </text>
     </g>
 
-    <g transform="translate(260 520) rotate(90)">
+    <g transform="translate(245 508)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">@</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(260 505) rotate(90)">
       <text class="callout">
-        <tspan x="0" dy="0">Hallway</tspan>
+        <tspan x="0" dy="0">Checker Hall</tspan>
       </text>
     </g>
 
     <g transform="translate(320 520)">
       <text class="callout anchor-middle">
-        <tspan x="0" dy="0">Checkered Room</tspan>
-        <tspan x="0" dy="1.1em">(lower/upper)</tspan>
+        <tspan x="0" dy="0">Checkers (upper</tspan>
+        <tspan x="0" dy="1.1em">/lower)</tspan>
       </text>
     </g>
 
@@ -86,6 +122,18 @@
       </text>
     </g>
 
+    <g transform="translate(125 560) rotate(-90)">
+      <text class="callout medium anchor-middle">
+        <tspan x="0" dy="0">Ramp</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(140 660) rotate(40)">
+      <text class="callout medium anchor-middle">
+        <tspan x="0" dy="0">Ramp</tspan>
+      </text>
+    </g>
+
     <g transform="translate(135 595)">
       <text class="callout">
         <tspan x="0" dy="0">Van</tspan>
@@ -104,9 +152,9 @@
       </text>
     </g>
 
-    <g transform="translate(350 640)">
-      <text class="callout">
-        <tspan x="0" dy="0">Bravo-Mid</tspan>
+    <g transform="translate(390 640)">
+      <text class="callout small anchor-middle">
+        <tspan x="0" dy="0">Dumpster</tspan>
         <tspan x="0" dy="1.1em">Stairs</tspan>
       </text>
     </g>
@@ -137,10 +185,9 @@
       </text>
     </g>
 
-    <g transform="translate(400 520)">
+    <g transform="translate(405 530)">
       <text class="callout anchor-middle">
-        <tspan x="0" dy="0">Echo 7</tspan>
-        <tspan x="0" dy="1.1em">Outside</tspan>
+        <tspan x="0" dy="0">Bushes</tspan>
       </text>
     </g>
 
@@ -163,15 +210,32 @@
     </g>
 
     <g transform="translate(460 600) rotate(-60)">
-      <text class="callout anchor-middle" style="font-size:1.15em;">
-        <tspan x="0" dy="0">Passageway</tspan>
-        <tspan x="0" dy="1.1em">(center)</tspan>
+      <text class="callout anchor-middle medium-regular">
+        <tspan x="0" dy="0">Fox Road</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(485 625)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Rafters</tspan>
       </text>
     </g>
 
     <g transform="translate(690 460) rotate(-20)">
       <text class="callout">
         <tspan x="0" dy="0">Bridge</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(670 475)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">A. Barrier</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(610 500)">
+      <text class="callout small anchor-middle">
+        <tspan x="0" dy="0">Ledges</tspan>
       </text>
     </g>
 
