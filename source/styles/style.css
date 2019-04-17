@@ -28,6 +28,15 @@ svg {
   text-anchor: middle;
 }
 
+.anchor-right {
+  text-anchor: end;
+}
+
+.callout.medium-regular {
+  font-size: 1.2em;
+  letter-spacing: 1.5px;
+}
+
 .callout.medium {
   font-size: 1.4em;
   letter-spacing: 2px;
