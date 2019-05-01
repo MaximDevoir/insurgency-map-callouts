@@ -33,15 +33,52 @@
       </text>
     </g>
 
-    <g transform="translate(805 450) rotate(90)">
-      <text class="callout">
+    <g transform="translate(800 460) rotate(90)">
+      <text class="callout anchor-middle" style="letter-spacing: 0.5px;">
         <tspan x="0" dy="0">Construction</tspan>
       </text>
     </g>
 
-    <g transform="translate(300 500)">
-      <text class="callout">
-        <tspan x="0" dy="0">Vents</tspan>
+    <g transform="translate(90 280)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">SEC. Beach</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(230 350)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Fish</tspan>
+        <tspan x="0" dy="1.1em">Bldg.</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(300 360)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Workshop</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(275 470) rotate(90)">
+      <text class="callout anchor-middle" style="letter-spacing: 0.5px;">
+        <tspan x="0" dy="0">SEC. Balcony</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(315 505)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">A.C.</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(380 275)">
+      <text class="callout anchor-left">
+        <tspan x="0" dy="0">SEC. Archway</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(405 245)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Dentist</tspan>
       </text>
     </g>
 
@@ -69,9 +106,29 @@
       </text>
     </g>
 
+    <g transform="translate(490 530)">
+      <text class="callout">
+        <tspan x="0" dy="0">Blue Windows</tspan>
+      </text>
+    </g>
+
     <g transform="translate(515 350) rotate(-45)">
       <text class="callout">
         <tspan x="0" dy="0">Humvee</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(480 330)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Pink</tspan>
+        <tspan x="0" dy="1.1em">Yard</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(520 400) rotate(-37)">
+      <text class="callout small anchor-middle">
+        <tspan x="0" dy="0">Burnt</tspan>
+        <tspan x="0" dy="1.1em">Car</tspan>
       </text>
     </g>
 
@@ -93,9 +150,9 @@
       </text>
     </g>
 
-    <g transform="translate(590 380)">
+    <g transform="translate(580 380)">
       <text class="callout">
-        <tspan x="0" dy="0">Windows</tspan>
+        <tspan x="0" dy="0">Train Windows</tspan>
       </text>
     </g>
 
@@ -123,6 +180,25 @@
       </text>
     </g>
 
+    <g transform="translate(600 510)">
+      <text class="callout small anchor-middle">
+        <tspan x="0" dy="0">Chem.</tspan>
+        <tspan x="0" dy="1.1em">Shop</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(380 570)">
+      <text class="callout anchor-left">
+        <tspan x="0" dy="0">Beach Alley</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(480 595) rotate(90)">
+      <text class="callout anchor-middle" style="letter-spacing: 0.5px;">
+        <tspan x="0" dy="0">Boat Wall</tspan>
+      </text>
+    </g>
+
     <g transform="translate(540 615)">
       <text class="callout">
         <tspan x="0" dy="0">Ruins</tspan>
@@ -136,14 +212,56 @@
     </g>
 
     <g transform="translate(580 710)">
-      <text class="callout">
+      <text class="callout anchor-middle medium-regular">
         <tspan x="0" dy="0">Beach</tspan>
       </text>
     </g>
 
-    <g transform="translate(720 670)">
-      <text class="callout">
-        <tspan x="0" dy="0">Cafe</tspan>
+    <g transform="translate(740 667)">
+      <text class="callout anchor-right">
+        <tspan x="0" dy="0">Icecream</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(700 600) rotate(-90)">
+      <text class="callout hide anchor-middle" style="letter-spacing: 0.5px;">
+        <tspan x="0" dy="0">INS. Arches</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(810 645)">
+      <text class="callout anchor-left">
+        <tspan x="0" dy="0">Sandbags</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(805 660) rotate(-90)">
+      <text class="callout anchor-right" style="letter-spacing: 0.5px;">
+        <tspan x="0" dy="0">Rafter</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(890 685) rotate(-0)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Tree</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(795 560) rotate(90)">
+      <text class="callout small anchor-middle" style="letter-spacing: 0.5px;">
+        <tspan x="0" dy="0">Containers</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(290 275)">
+      <text class="callout small anchor-left">
+        <tspan x="0" dy="0">SEC. Van</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(275 210)">
+      <text class="callout small anchor-right">
+        <tspan x="0" dy="0">SEC. Tires</tspan>
       </text>
     </g>
   </g>
