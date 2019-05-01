@@ -11,12 +11,32 @@ svg {
   visibility: hidden;
 }
 
+/* Both `.hide` and `.hide text` share all each others properties and values.
+ *  This is due to a design choice early on where the `.hide` class was applied
+ *  to the `text` element of the callout. However, as `paths` were added to
+ *  callouts and since we should only use `.hide` once per callout, we ended up
+ *  with these to similar styles. This maintains backwards compatibility with
+ *  the placement of the `.hide` class at the `text` element on existing
+ *  callouts.
+ */
 .hide {
   opacity: 1 !important;
   fill-opacity: 0.7 !important;
   fill: red !important;
 }
 
+/* Shares all properties and values with `.hide`. This style should be placed at
+ *  the top-most node of a callout. See `.hide` for more info.
+ */
+.hide text {
+  opacity: 1 !important;
+  fill-opacity: 0.7 !important;
+  fill: red !important;
+}
+
+.hide path {
+  stroke: red !important;
+}
 .callout.small {
   font-size: 0.85em;
 }
