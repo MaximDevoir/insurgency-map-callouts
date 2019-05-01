@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href=".\..\styles\style.css" type="text/css"?>
+
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="1024px" height="1024px"
+  viewBox="0 0 1024 1024" version="1.1" id="SVGRoot">
+
+  <title>Verticality Map Callouts</title>
+
+  <g id="map">
+    <image id="map_verticality" y="0" x="0" preserveAspectRatio="none"
+      height="1024" width="1024"
+      href=".\..\external\root\materials\overviews\verticality.jpg" />
+  </g>
+
+  <g id="callouts">
+
+    <g transform="translate(195 560)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Bravo Roof</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(180 500)">
+      <text class="callout anchor-right">
+        <tspan x="0" dy="0">Alpha Roof</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(215 325) rotate(8)">
+      <text class="callout anchor-left">
+        <tspan x="0" dy="0">A Trees</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(250 420)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Intel</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(300 390) rotate(-90)">
+      <text class="callout anchor-right" style="letter-spacing: 0.5px">
+        <tspan x="0" dy="0">Planks</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(315 325)">
+      <text class="callout anchor-left">
+        <tspan x="0" dy="0">Camp Trap</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(350 355) rotate(0)">
+      <text class="callout medium-regular anchor-middle">
+        <tspan x="0" dy="0">Alpha Road</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(350 480) rotate(90)">
+      <text class="callout anchor-middle" style="letter-spacing: 0.5px;">
+        <tspan x="0" dy="0">Last Stand</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(380 620)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">INS. Tower</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(520 605)">
+      <text class="callout anchor-right">
+        <tspan x="0" dy="0">Crack</tspan>
+        <tspan x="0" dy="1.1em">House</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(480 650)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Aid Supplies</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(460 495) rotate(90)">
+      <text class="callout anchor-middle" style="letter-spacing: 0.5px;">
+        <tspan x="0" dy="0">INS. Apartments</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(485 380)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Hostel</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(530 490) rotate(-90)">
+      <text class="callout anchor-middle" style="letter-spacing: 0.5px;">
+        <tspan x="0" dy="0">SEC. Apartments</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(620 365)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">SEC. Tower</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(390 510) rotate(90)">
+      <text class="callout medium-regular anchor-middle">
+        <tspan x="0" dy="0">Delta St.</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(600 470) rotate(-90)">
+      <text class="callout medium-regular anchor-middle">
+        <tspan x="0" dy="0">Echo St.</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(630 625)">
+      <text class="callout medium-regular anchor-middle">
+        <tspan x="0" dy="0">Abrams Road</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(950 620)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Rocks</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
