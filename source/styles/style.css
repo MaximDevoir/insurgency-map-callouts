@@ -29,6 +29,10 @@ svg {
   font-size: 1em;
 }
 
+.anchor-left {
+  text-anchor: start;
+}
+
 .anchor-middle {
   text-anchor: middle;
 }
