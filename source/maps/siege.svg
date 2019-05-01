@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href=".\..\styles\style.css" type="text/css"?>
+
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="1024px" height="1024px"
+  viewBox="0 0 1024 1024" version="1.1" id="SVGRoot">
+
+  <title>Siege Map Callouts</title>
+
+  <g id="map">
+    <image id="map_siege" y="0" x="0" preserveAspectRatio="none" height="1024"
+      width="1024" href=".\..\external\root\materials\overviews\siege.jpg" />
+  </g>
+
+  <g id="callouts">
+
+    <g transform="translate(220 290)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Warehouse</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(180 220)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Cache</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(300 230)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Backstreet</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(150 330)">
+      <text class="callout small hide">
+        <tspan x="0" dy="0">Dumpster</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(165 380)">
+      <text class="callout small hide">
+        <tspan x="0" dy="0">Rafter</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(480 280)">
+      <text class="callout medium anchor-middle">
+        <tspan x="0" dy="0">Hostel</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(770 430)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Spencers</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(770 610)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Abento's</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(820 225)">
+      <text class="callout">
+        <tspan x="0" dy="0">Garage</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(880 400) rotate(75)">
+      <text class="callout hide">
+        <tspan x="0" dy="0">Hallway</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(870 617)">
+      <text class="callout anchor-middle hide">
+        <tspan x="0" dy="0">Coco</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(887 653)">
+      <text class="callout small anchor-middle hide">
+        <tspan x="0" dy="0">Gamble</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(780 750)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Lightbulbs</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(820 830)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Lockers</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(560 880)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Flowers</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(550 450)">
+      <text class="callout">
+        <tspan x="0" dy="0">Barber</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(550 590)">
+      <text class="callout">
+        <tspan x="0" dy="0">Autoshop</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(537 745)">
+      <text class="callout anchor-right">
+        <tspan x="0" dy="0">Triple</tspan>
+        <tspan x="0" dy="1.1em">Windows</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(420 810)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Alpha Alley</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(150 715)">
+      <text class="callout small anchor-left hide">
+        <tspan x="0" dy="0">Boxes</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(460 620)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Alpha</tspan>
+        <tspan x="0" dy="1.1em">Shutters</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(367 630)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Alpha</tspan>
+        <tspan x="0" dy="1.1em">Arch</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(460 420)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Bravo</tspan>
+        <tspan x="0" dy="1.1em">Shutters</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(367 410)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Bravo</tspan>
+        <tspan x="0" dy="1.1em">Arch</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(600 522)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Mid</tspan>
+        <tspan x="0" dy="1.1em">Arch</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(750 524)">
+      <text class="callout medium">
+        <tspan x="0" dy="0">SHOPS</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
