@@ -7,8 +7,14 @@ svg {
   font-size: 12.2px;
 }
 
-.hide {
+.production .hide {
   visibility: hidden;
+}
+
+.hide {
+  opacity: 1 !important;
+  fill-opacity: 0.7 !important;
+  fill: red !important;
 }
 
 .callout.small {
