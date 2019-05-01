@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href=".\..\styles\style.css" type="text/css"?>
+
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="1024px" height="1024px"
+  viewBox="0 0 1024 1024" version="1.1" id="SVGRoot">
+
+  <title>Revolt Map Callouts</title>
+
+  <g id="map">
+    <image id="map_revolt" y="0" x="0" preserveAspectRatio="none" height="1024"
+      width="1024" href=".\..\external\root\materials\overviews\revolt.jpg" />
+  </g>
+
+  <g id="callouts">
+
+    <g transform="translate(993 405)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Cache</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(790 470) rotate(-90)">
+      <text class="callout medium-regular anchor-middle">
+        <tspan x="0" dy="0">SEC. Apartments</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(775 570)">
+      <text class="callout anchor-left">
+        <tspan x="0" dy="0">Corner</tspan>
+        <tspan x="0" dy="1.1em">Store</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(930 645)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Hector 6</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(830 690)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Medical</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(660 545)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Barber</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(665 669)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Construction</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(595 550)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Shutters</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(550 595)">
+      <text class="callout medium-regular anchor-middle">
+        <tspan x="0" dy="0">Hotel</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(525 640) rotate(90)">
+      <text class="callout anchor-middle" style="letter-spacing: 0.5px;">
+        <tspan x="0" dy="0">Seattle</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(452 695) rotate(90)">
+      <text class="callout anchor-middle" style="letter-spacing: 1px;">
+        <tspan x="0" dy="0">Arcway</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(365 685)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Dark</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(270 640) rotate(15)">
+      <text class="callout medium-regular anchor-middle">
+        <tspan x="0" dy="0">Alpha Backyard</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(270 400) rotate(-15)">
+      <text class="callout medium-regular anchor-middle">
+        <tspan x="0" dy="0">Bravo Backyard</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(465 395)">
+      <text class="callout anchor-left">
+        <tspan x="0" dy="0">Bravo</tspan>
+        <tspan x="0" dy="1.1em">Windows</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(550 270)">
+      <text class="callout medium-regular anchor-middle">
+        <tspan x="0" dy="0">Lumber</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(560 405)">
+      <text class="callout medium-regular anchor-middle">
+        <tspan x="0" dy="0">Factory</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(695 397)">
+      <text class="callout anchor-right">
+        <tspan x="0" dy="0">Factory</tspan>
+        <tspan x="0" dy="1.1em">Shop</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(660 280)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Garage</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(560 475)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">AAV</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
