@@ -57,6 +57,7 @@ function updateStagedHrefs(next) {
     )
     const relativePath = path.relative(mapPath, overviewJpg).slice(1)
 
+    // Converts the underlying map texture to base64
     svgTree.transform(node => {
       if (node.attributes && node.attributes.id === `map_${mapName}`) {
         if (encodeImageWithBase64) {
@@ -73,7 +74,8 @@ function updateStagedHrefs(next) {
     })
 
     if (BUILD_FOR_PRODUCTION === false) {
-      // Add a debug message in top left corner
+      // Adds a debug message in top left corner, when BUILD_FOR_PRODUCTION is
+      // FALSE.
       svgTree.transform(node => {
         if (node.attributes && node.attributes.id === 'callouts') {
           node.children.unshift({
@@ -112,6 +114,8 @@ function updateStagedHrefs(next) {
       return node
     })
 
+    // Injects a STYLE node, which contains a unique string to be identified
+    // later, at the start of SVGRoot.
     svgTree.transform(node => {
       if (node.attributes && node.attributes.id === 'SVGRoot') {
         node.children.unshift({
@@ -139,6 +143,8 @@ function updateStagedHrefs(next) {
         try {
           const styleString = '<![CDATA[\n' + fs.readFileSync(stylesPath, 'utf8') + '\n]]>\n'
 
+          // Adds style information where the styles replacement identifier text
+          // is at.
           replaceInFile.sync({
             files: mapPath,
             from: /%STAGED_STYLES_REPLACEMENT_IDENTIFIER%/g,
