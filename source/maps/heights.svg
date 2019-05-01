@@ -13,6 +13,7 @@
   </g>
 
   <g id="callouts">
+
     <g transform="translate(485 277)">
       <text class="callout anchor-middle">
         <tspan x="0" dy="0">Firewood</tspan>
@@ -55,7 +56,6 @@
         <tspan x="0" dy="0">Broken Wall</tspan>
       </text>
     </g>
-
 
     <g transform="translate(585 600)">
       <text class="callout small anchor-middle">
@@ -167,7 +167,6 @@
       </text>
     </g>
 
-
     <g transform="translate(435 525) rotate(40)">
       <text class="callout anchor-middle" style="letter-spacing: 0.5px">
         <tspan x="0" dy="0">Crossfire</tspan>
@@ -180,6 +179,5 @@
         <tspan x="0" dy="1.1em"> Field</tspan>
       </text>
     </g>
-
   </g>
 </svg>
