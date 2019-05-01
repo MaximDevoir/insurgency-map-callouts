@@ -16,6 +16,7 @@ const fs = require('fs-extra')
 const path = require('path')
 
 const chalk = require('chalk')
+const classNames = require('classnames')
 
 const maps = require('./../packages/maps')
 const btoa = require('btoa')
@@ -97,6 +98,19 @@ function updateStagedHrefs(next) {
         return node
       })
     }
+
+    // Adds a `production` class to #SVGRoot when in production mode.
+    svgTree.transform(node => {
+      if (node.attributes && node.attributes.id === 'SVGRoot') {
+        const classes = classNames({
+          production: BUILD_FOR_PRODUCTION
+        }, ...String.prototype.split.call(node.attributes.class || '', ' '))
+
+        node.attributes.class = classes
+      }
+
+      return node
+    })
 
     svgTree.transform(node => {
       if (node.attributes && node.attributes.id === 'SVGRoot') {
