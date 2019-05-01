@@ -18,6 +18,7 @@
     "btoa": "^1.2.1",
     "chalk": "^2.4.2",
     "child-process-promise": "^2.2.1",
+    "classnames": "^2.2.6",
     "convert-svg-to-png": "^0.5.0",
     "detect-newline": "^2.1.0",
     "dotenv": "^7.0.0",
