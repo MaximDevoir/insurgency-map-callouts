@@ -11,6 +11,13 @@ svg {
   visibility: hidden;
 }
 
+/* Hide a node, intended for development purposes only. Such as to view a
+ *  potentially overlapping callout.
+ */
+.hide-quick {
+  visibility: hidden;
+}
+
 /* Both `.hide` and `.hide text` share all each others properties and values.
  *  This is due to a design choice early on where the `.hide` class was applied
  *  to the `text` element of the callout. However, as `paths` were added to
