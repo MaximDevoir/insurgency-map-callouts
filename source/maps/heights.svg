@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href=".\..\styles\style.css" type="text/css"?>
+
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="1024px" height="1024px"
+  viewBox="0 0 1024 1024" version="1.1" id="SVGRoot">
+
+  <title>Heights Map Callouts</title>
+
+  <g id="map">
+    <image id="map_heights" y="0" x="0" preserveAspectRatio="none" height="1024"
+      width="1024" href=".\..\external\root\materials\overviews\heights.jpg" />
+  </g>
+
+  <g id="callouts">
+    <g transform="translate(485 277)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Firewood</tspan>
+        <tspan x="0" dy="1.1em">House</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(650 270)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Gecho 3</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(522 398)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Bunker</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(650 350) rotate(23)">
+      <text class="callout anchor-middle hide">
+        <tspan x="0" dy="0">Ridge</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(710 380)">
+      <text class="callout anchor-left">
+        <tspan x="0" dy="0">Farmhouse</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(700 510)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Cottage</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(565 589)">
+      <text class="callout small anchor-right">
+        <tspan x="0" dy="0">Broken Wall</tspan>
+      </text>
+    </g>
+
+
+    <g transform="translate(585 600)">
+      <text class="callout small anchor-middle">
+        <tspan x="0" dy="0">Bridge</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(650 600)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Bridge</tspan>
+        <tspan x="0" dy="1.1em">House</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(600 650) rotate(55)">
+      <text class="callout anchor-middle" style="letter-spacing: 0.5px;">
+        <tspan x="0" dy="0">Upstream River</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(600 520) rotate(-90)">
+      <text class="callout anchor-left" style="letter-spacing: 0.5px;">
+        <tspan x="0" dy="0">Downstream River</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(535 545)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Radio</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(500 620)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Tarp</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(630 840) rotate(-15)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Humvee</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(525 760)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Workshop</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(575 790)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Aprtments</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(510 865)">
+      <text class="callout small anchor-right" style="letter-spacing: 0.7px;">
+        <tspan x="0" dy="0">A. Skinny</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(630 930) rotate(45)">
+      <text class="callout anchor-middle" style="letter-spacing: 0.5px">
+        <tspan x="0" dy="0">Convoy</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(415 665)">
+      <text class="callout anchor-right">
+        <tspan x="0" dy="0">Bravo</tspan>
+        <tspan x="0" dy="1.1em">Windows</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(370 720) rotate(30)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">B. Yard</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(330 540) rotate(30)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Garden</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(320 460) rotate(-40)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Buried Tank</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(400 430)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Intel</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(455 435)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Mancave</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(385 575) rotate(90)" style="letter-spacing: 0.5px">
+      <text class="callout anchor-right">
+        <tspan x="0" dy="0">Gun Range</tspan>
+      </text>
+    </g>
+
+
+    <g transform="translate(435 525) rotate(40)">
+      <text class="callout anchor-middle" style="letter-spacing: 0.5px">
+        <tspan x="0" dy="0">Crossfire</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(520 465)">
+      <text class="callout anchor-middle">
+        <tspan x="0" dy="0">Center</tspan>
+        <tspan x="0" dy="1.1em"> Field</tspan>
+      </text>
+    </g>
+
+  </g>
+</svg>
