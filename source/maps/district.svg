@@ -89,45 +89,45 @@
       </text>
     </g>
 
-    <g transform="translate(535 493)">
+    <g transform="translate(535 505)">
       <text class="callout anchor-right">
-        <tspan x="0" dy="1.1em">A. Windows</tspan>
+        <tspan x="0" dy="0">A. Windows</tspan>
       </text>
     </g>
 
-    <g transform="translate(555 499)">
+    <g transform="translate(555 505)">
       <text class="callout anchor-middle">
-        <tspan x="0" dy="1.1em">Hole</tspan>
+        <tspan x="0" dy="0">Hole</tspan>
       </text>
     </g>
 
-    <g transform="translate(532 390) rotate(90)">
+    <g transform="translate(518 390) rotate(90)">
       <text class="callout anchor-middle">
-        <tspan x="0" dy="1.1em">A. Alley</tspan>
+        <tspan x="0" dy="0">A. Alley</tspan>
       </text>
     </g>
 
-    <g transform="translate(430 300)">
+    <g transform="translate(430 310)">
       <text class="callout anchor-middle">
-        <tspan x="0" dy="1.1em">Abento</tspan>
+        <tspan x="0" dy="0">Abento</tspan>
       </text>
     </g>
 
-    <g transform="translate(435 345)">
+    <g transform="translate(435 360)">
       <text class="callout medium-regular anchor-middle">
-        <tspan x="0" dy="1.1em">SHOPS</tspan>
+        <tspan x="0" dy="0">SHOPS</tspan>
       </text>
     </g>
 
-    <g transform="translate(440 390)">
+    <g transform="translate(440 400)">
       <text class="callout anchor-middle">
-        <tspan x="0" dy="1.1em">Supermarket</tspan>
+        <tspan x="0" dy="0">Supermarket</tspan>
       </text>
     </g>
 
-    <g transform="translate(460 255)">
+    <g transform="translate(460 270)">
       <text class="callout anchor-middle">
-        <tspan x="0" dy="1.1em">A. Back Alley</tspan>
+        <tspan x="0" dy="0">A. Back Alley</tspan>
       </text>
     </g>
   </g>
