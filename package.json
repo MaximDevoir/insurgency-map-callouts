@@ -8,16 +8,17 @@
     "node": ">=10"
   },
   "scripts": {
+    "build": "node source/scripts/build.js",
     "preinstall": "node source/scripts/preinstall.js",
     "prestart": "node source/scripts/precheck.js",
-    "build": "node source/scripts/build.js",
-    "start": "node source/scripts/index.js"
+    "start": "node source/scripts/watch.js"
   },
   "dependencies": {
     "arch": "^2.1.1",
     "btoa": "^1.2.1",
     "chalk": "^2.4.2",
     "child-process-promise": "^2.2.1",
+    "chokidar": "^3.0.0",
     "classnames": "^2.2.6",
     "convert-svg-to-png": "^0.5.0",
     "detect-newline": "^2.1.0",

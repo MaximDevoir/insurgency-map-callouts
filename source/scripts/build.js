@@ -8,7 +8,6 @@ const generateModStructure = require('./compile/generate-mod-structure')
 const generateVPK = require('./compile/generate-vpk')
 const verifyVPK = require('./compile/verify-vpk')
 const stageImages = require('./compile/stage-images')
-const updateStagedHrefs = require('./compile/update-staged-hrefs')
 
 function finishedMessage() {
   process.stdout.write('\n\n' + chalk.green('Mod successfully created!\n'))
@@ -18,7 +17,6 @@ const buildSteps = [
   cleanBuildDirectories,
   ensureBuildDirectories,
   stageImages,
-  updateStagedHrefs,
   rasterizeMaps,
   convertMapsToVTF,
   generateModStructure,
