@@ -1,6 +1,6 @@
 {
   "name": "map-callouts-mod",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A package that simplifies the many steps that go into creating a map overviews texture mod for the Steam Workshop.",
   "author": "Maxim Devoir <maximdevoir@hotmail.com>",
   "license": "MIT",
