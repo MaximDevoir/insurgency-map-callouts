@@ -10,20 +10,20 @@ const sourceDir = path.join(scriptsDir, '..')
 const rootDir = path.join(sourceDir, '..')
 
 /**
- * Ensures that all the directories that may be required by subsequent build
+ * Ensures that all the directories that may be required by subsequent watch
  * steps exist.
  *
  * @param {function|undefined} nextStep The function to call once
- * ensureBuildDirectories has finished executing.
+ * ensureWatchDirectories has finished executing.
  */
-function ensureBuildDirectories(nextStep) {
+function ensureWatchDirectories(nextStep) {
   process.stdout.write('\n\nEnsuring directories\n')
 
   // All directories are relative to the project root folder.
   const directoriesToEnsure = [
-    ['build'],
-    ['build', 'staged'],
-    ['build', 'staged', 'maps']
+    ['source'],
+    ['source', 'external'],
+    ['source', 'external', 'maps']
   ]
 
   const directoryPromises = directoriesToEnsure.map(directory => {
@@ -59,4 +59,4 @@ function ensureBuildDirectories(nextStep) {
   })
 }
 
-module.exports = ensureBuildDirectories
+module.exports = ensureWatchDirectories
