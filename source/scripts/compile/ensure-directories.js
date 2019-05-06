@@ -18,6 +18,7 @@ const rootDir = path.join(sourceDir, '..')
  */
 function ensureBuildDirectories(nextStep) {
   process.stdout.write('\n\nEnsuring directories\n')
+
   // All directories are relative to the project root folder.
   const directoriesToEnsure = [
     ['build'],
