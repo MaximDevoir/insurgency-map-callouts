@@ -16,7 +16,7 @@ require('dotenv').config(defaultEnvFile)
 const modName = process.env.MOD_NAME
 const GAME_LOCATION = process.env.GAME_LOCATION
 const VPK = path.join(GAME_LOCATION, 'bin', 'vpk.exe')
-const BUILD_FOR_PRODUCTION = process.env.BUILD_FOR_PRODUCTION.toLowerCase() === 'true'
+const BUILD_FOR_PRODUCTION = process.env.BUILD_FOR_PRODUCTION.toLowerCase() === 'true' || false
 
 function generateVPK(next) {
   const modDir = path.join(buildDir, modName)
