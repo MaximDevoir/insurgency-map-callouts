@@ -1,0 +1,461 @@
+{
+  "map": {
+    "name": "market",
+    "generateNightVariant": true,
+    "night": {
+      "translate": "5 35"
+    }
+  },
+  "callouts": [{
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "705 310",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Garage"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "800 330",
+    "styleString": "",
+    "rotate": "90",
+    "callout": {
+      "en": ["Tires"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "677 300",
+    "styleString": "",
+    "rotate": "90",
+    "callout": {
+      "en": ["Lumber"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "800 460",
+    "styleString": "letter-spacing: 0.5px;",
+    "rotate": "90",
+    "callout": {
+      "en": ["Construction"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "90 280",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["SEC. Beach"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "230 350",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Fish", "Bldg."]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "300 360",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Workshop"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "275 470",
+    "styleString": "letter-spacing: 0.5px;",
+    "rotate": "90",
+    "callout": {
+      "en": ["SEC. Balcony"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "315 505",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["A.C."]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-left"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "380 275",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["SEC. Archway"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "405 245",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Dentist"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "400 340",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Pink"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "435 305",
+    "styleString": "",
+    "rotate": "90",
+    "callout": {
+      "en": ["Balcony"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "445 390",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Kebab"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "440 510",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Barber"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "490 530",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Blue Windows"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "515 350",
+    "styleString": "",
+    "rotate": "-45",
+    "callout": {
+      "en": ["Humvee"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "480 330",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Pink", "Yard"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "small", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "520 400",
+    "styleString": "",
+    "rotate": "-37",
+    "callout": {
+      "en": ["Burnt", "Car"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "495 440",
+    "styleString": "",
+    "rotate": "90",
+    "callout": {
+      "en": ["Blue"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "585 255",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Train Tracks"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "600 340",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Yard"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "580 380",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Train Windows"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "650 400",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Shops"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "630 440",
+    "styleString": "",
+    "rotate": "90",
+    "callout": {
+      "en": ["Yellow"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "565 455",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Helo"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "640 510",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["School"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "small", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "600 510",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Chem.", "Shop"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-left"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "380 570",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Beach Alley"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "480 595",
+    "styleString": "letter-spacing: 0.5px;",
+    "rotate": "90",
+    "callout": {
+      "en": ["Boat Wall"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "540 615",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Ruins"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "560 675",
+    "styleString": "",
+    "rotate": "-15",
+    "callout": {
+      "en": ["Police"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle", "medium-regular"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "580 710",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Beach"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-right"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "740 667",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Icecream"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "hide", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "700 600",
+    "styleString": "letter-spacing: 0.5px;",
+    "rotate": "-90",
+    "callout": {
+      "en": ["INS. Arches"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-left"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "810 645",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Sandbags"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-right"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "805 660",
+    "styleString": "letter-spacing: 0.5px;",
+    "rotate": "-90",
+    "callout": {
+      "en": ["Rafter"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "890 685",
+    "styleString": "",
+    "rotate": "-0",
+    "callout": {
+      "en": ["Tree"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "small", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "795 560",
+    "styleString": "letter-spacing: 0.5px;",
+    "rotate": "90",
+    "callout": {
+      "en": ["Containers"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "small", "anchor-left"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "290 275",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["SEC. Van"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "small", "anchor-right"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "275 210",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["SEC. Tires"]
+    },
+    "night": {}
+  }]
+}

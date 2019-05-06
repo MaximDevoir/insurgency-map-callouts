@@ -146,6 +146,7 @@ function checkVTFLib(nextCheck) {
       if (!answer.downloadVTFLib) {
         process.stdout.write(chalk.magenta('You must manually set VTF_CMD in your `.env` file.\n'))
 
+        process.exit(1)
         return (typeof nextCheck === 'function' && nextCheck(), undefined)
       }
 
