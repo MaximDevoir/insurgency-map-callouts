@@ -6,7 +6,6 @@
 const fs = require('fs-extra')
 const path = require('path')
 
-const chalk = require('chalk')
 const svgson = require('svgson')
 
 const beautifyHtml = require('js-beautify').html

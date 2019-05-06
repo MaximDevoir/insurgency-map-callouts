@@ -4,18 +4,28 @@ const glob = require('glob')
 
 const scriptsDir = path.dirname(__dirname, '..')
 const rootDir = path.join(scriptsDir, '..', '..')
+const externalDir = path.join(rootDir, 'source', 'external')
 const mapsDirectory = path.join(rootDir, 'source', 'maps')
 const mapsDirectoryStaged = path.join(rootDir, 'build', 'staged', 'maps')
 
 /**
- * @returns {string[]} List of all the svg maps in source/maps
+ * @returns {string[]} List of all the JSON maps in source/maps
  */
 function getSync() {
-  return glob.sync(path.join(mapsDirectory, '*.svg'))
+  return glob.sync(path.join(mapsDirectory, '*.json'), {
+    ignore: '**/skeleton.json'
+  })
 }
 
 function get(callback) {
-  return glob(path.join(mapsDirectory, '*.svg'), callback)
+  return glob(path.join(mapsDirectory, '*.json'), callback)
+}
+
+/**
+ * @returns {string[]} List of all SVG maps in source/external/maps
+ */
+function getExternalSync() {
+  return glob.sync(path.join(externalDir, 'maps', '*.svg'))
 }
 
 async function getStaged(callback) {
@@ -43,6 +53,7 @@ module.exports = {
   mapsDirectory,
   getSync,
   getStagedSync,
+  getExternalSync,
   getStagedVTFSync,
   getStagedRasterSync,
   get,
