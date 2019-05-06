@@ -1,0 +1,18 @@
+{
+  "map": {
+    "name": "skeleton",
+    "generateNightVariant": false
+  },
+  "callouts": [{
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": [],
+    "exclude_gamemodes": [],
+    "translate": "80 300",
+    "styleString": "",
+    "rotate": "0",
+    "callout": {
+      "en": ["line 1", "line 2"]
+    },
+    "night": {}
+  }]
+}

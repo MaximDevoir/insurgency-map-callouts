@@ -1,0 +1,293 @@
+{
+  "map": {
+    "name": "siege",
+    "generateNightVariant": false
+  },
+  "callouts": [{
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "220 290",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Warehouse"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "180 220",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Cache"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "300 230",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Backstreet"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "small", "hide"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "150 330",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Dumpster"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "small", "hide"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "165 380",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Rafter"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "medium", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "480 280",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Hostel"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "770 430",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Spencers"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "770 610",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Abento's"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "820 225",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Garage"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "hide"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "880 400",
+    "styleString": "",
+    "rotate": "75",
+    "callout": {
+      "en": ["Hallway"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle", "hide"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "870 617",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Coco"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "small", "anchor-middle", "hide"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "887 653",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Gamble"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "780 750",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Lightbulbs"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "820 830",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Lockers"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "560 880",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Flowers"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "550 450",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Barber"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "550 590",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Autoshop"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-right"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "537 745",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Triple", "Windows"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "420 810",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Alpha Alley"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "small", "anchor-left", "hide"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "150 715",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Boxes"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "460 620",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Alpha", "Shutters"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "367 630",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Alpha", "Arch"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "460 420",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Bravo", "Shutters"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "367 410",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Bravo", "Arch"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "600 522",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Mid", "Arch"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "medium"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "750 524",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["SHOPS"]
+    },
+    "night": {}
+  }]
+}

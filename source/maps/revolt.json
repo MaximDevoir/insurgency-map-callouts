@@ -1,0 +1,227 @@
+{
+  "map": {
+    "name": "revolt",
+    "generateNightVariant": false
+  },
+  "callouts": [{
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "993 405",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Cache"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "medium-regular", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "790 470",
+    "styleString": "",
+    "rotate": "-90",
+    "callout": {
+      "en": ["SEC. Apartments"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-left"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "775 570",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Corner", "Store"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "930 645",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Hector 6"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "830 690",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Medical"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "660 545",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Barber"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "665 669",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Construction"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "595 550",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Shutters"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "medium-regular", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "550 595",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Hotel"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "525 640",
+    "styleString": "letter-spacing: 0.5px;",
+    "rotate": "90",
+    "callout": {
+      "en": ["Seattle"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "452 695",
+    "styleString": "letter-spacing: 1px;",
+    "rotate": "90",
+    "callout": {
+      "en": ["Arcway"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "365 685",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Dark"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "medium-regular", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "270 640",
+    "styleString": "",
+    "rotate": "15",
+    "callout": {
+      "en": ["Alpha Backyard"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "medium-regular", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "270 400",
+    "styleString": "",
+    "rotate": "-15",
+    "callout": {
+      "en": ["Bravo Backyard"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-left"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "465 395",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Bravo", "Windows"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "medium-regular", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "550 270",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Lumber"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "medium-regular", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "560 405",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Factory"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-right"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "695 397",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Factory", "Shop"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "660 280",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Garage"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "560 475",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["AAV"]
+    },
+    "night": {}
+  }]
+}

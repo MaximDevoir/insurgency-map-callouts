@@ -1,0 +1,216 @@
+{
+  "map": {
+    "name": "verticality",
+    "generateNightVariant": false
+  },
+  "callouts": [{
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "195 560",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Bravo Roof"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-right"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "180 500",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Alpha Roof"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-left"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "215 325",
+    "styleString": "",
+    "rotate": "8",
+    "callout": {
+      "en": ["A Trees"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "250 420",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Intel"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-right"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "300 390",
+    "styleString": "letter-spacing: 0.5px",
+    "rotate": "-90",
+    "callout": {
+      "en": ["Planks"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-left"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "315 325",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Camp Trap"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "medium-regular", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "350 355",
+    "styleString": "",
+    "rotate": "0",
+    "callout": {
+      "en": ["Alpha Road"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "350 480",
+    "styleString": "letter-spacing: 0.5px;",
+    "rotate": "90",
+    "callout": {
+      "en": ["Last Stand"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "380 620",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["INS. Tower"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-right"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "520 605",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Crack", "House"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "480 650",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Aid Supplies"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "460 495",
+    "styleString": "letter-spacing: 0.5px;",
+    "rotate": "90",
+    "callout": {
+      "en": ["INS. Apartments"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "485 380",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Hostel"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "530 490",
+    "styleString": "letter-spacing: 0.5px;",
+    "rotate": "-90",
+    "callout": {
+      "en": ["SEC. Apartments"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "620 365",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["SEC. Tower"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "medium-regular", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "390 510",
+    "styleString": "",
+    "rotate": "90",
+    "callout": {
+      "en": ["Delta St."]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "medium-regular", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "600 470",
+    "styleString": "",
+    "rotate": "-90",
+    "callout": {
+      "en": ["Echo St."]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "medium-regular", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "630 625",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Abrams Road"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "950 620",
+    "styleString": "",
+    "rotate": "",
+    "callout": {
+      "en": ["Rocks"]
+    },
+    "night": {}
+  }]
+}
