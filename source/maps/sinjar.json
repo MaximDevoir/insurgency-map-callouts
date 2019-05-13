@@ -4,213 +4,291 @@
     "generateNightVariant": true
   },
   "callouts": [{
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "570 280",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["Alpha Valley"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "550 315",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["Outpost"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout", "medium"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "720 275",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["Bridge"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "710 225",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["West"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "770 230",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["East"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "900 480",
-    "styleString": "",
-    "rotate": "-90",
-    "callout": {
-      "en": ["Terrace"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "770 425",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["Gas Station"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "725 430",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["Auto"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "770 490",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["Bar"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "690 400",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["India 5"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "710 610",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["India 8"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "775 570",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["Juliett 7"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout", "small"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "468 553",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["Mound"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "525 485",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["Golf 6", "South"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "555 435",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["Golf 6", "North"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "520 390",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["SEC", "Bushes"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "655 500",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["Center", "Bldg."]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "500 650",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["Radio"]
-    },
-    "night": {}
-  }, {
-    "classNames": ["callout"],
-    "active_gamemodes": ["ALL", "ambush"],
-    "exclude_gamemodes": [],
-    "translate": "550 730",
-    "styleString": "",
-    "rotate": "",
-    "callout": {
-      "en": ["Bravo Valley"]
-    },
-    "night": {}
-  }]
+      "classNames": ["callout", "medium", "anchor-middle"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "570 280",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Alpha Road"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "anchor-middle"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "320 280",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Checkpoint"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "medium-regular", "anchor-middle"],
+      "active_gamemodes": ["ambush"],
+      "exclude_gamemodes": [],
+      "translate": "280 430",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["A B Y S S"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "550 315",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Outpost"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "anchor-middle", "medium-regular"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "755 275",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Bridge"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "hide"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "710 225",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["West"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "hide"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "770 230",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["East"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "anchor-middle"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "755 225",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Bridge Bldg."]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "900 480",
+      "styleString": "",
+      "rotate": "-90",
+      "callout": {
+        "en": ["Terrace"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "770 425",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Gas Station"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "anchor-middle"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "870 415",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Hotel"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "850 350",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Bunker"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "725 430",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Auto"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "770 490",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Bar"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "690 400",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["India 5"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "anchor-middle"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "730 613",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Sidehouse"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "anchor-middle"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "750 650",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Arches"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "775 570",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Juliett 7"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "anchor-middle"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "870 550",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Sinks"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "small"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "468 553",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Mound"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "510 490",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Construction"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "anchor-middle"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "570 440",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Hideout"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "anchor-right"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "547 393",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["SEC", "Bushes"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "anchor-middle"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "670 510",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Kitchen"]
+        },
+      "night": {}
+    }, {
+      "classNames": ["callout"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "500 650",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Radio"]
+      },
+      "night": {}
+    }, {
+      "classNames": ["callout", "anchor-middle", "medium"],
+      "active_gamemodes": ["ALL", "ambush"],
+      "exclude_gamemodes": [],
+      "translate": "620 730",
+      "styleString": "",
+      "rotate": "",
+      "callout": {
+        "en": ["Bravo Valley"]
+      },
+      "night": {}
+    }
+  ]
 }
