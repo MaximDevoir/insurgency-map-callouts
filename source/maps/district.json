@@ -1,7 +1,10 @@
 {
   "map": {
     "name": "district",
-    "generateNightVariant": false
+    "generateNightVariant": true,
+    "night": {
+      "translate": "0 0"
+    }
   },
   "callouts": [{
     "classNames": ["callout", "anchor-middle"],
@@ -13,7 +16,9 @@
     "callout": {
       "en": ["Backyard"]
     },
-    "night": {}
+    "night": {
+      "translate": "r80 r-15"
+    }
   }, {
     "classNames": ["callout", "medium", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -24,7 +29,9 @@
     "callout": {
       "en": ["School"]
     },
-    "night": {}
+    "night": {
+      "translate": "r60 r-30"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -35,7 +42,9 @@
     "callout": {
       "en": ["Fontyard"]
     },
-    "night": {}
+    "night": {
+      "translate": "r60 r-35"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -46,7 +55,9 @@
     "callout": {
       "en": ["School Alley"]
     },
-    "night": {}
+    "night": {
+      "translate": "r60 r-35"
+    }
   }, {
     "classNames": ["callout", "anchor-right"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -57,7 +68,9 @@
     "callout": {
       "en": ["Storage"]
     },
-    "night": {}
+    "night": {
+      "translate": "r50 r-48"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -68,7 +81,9 @@
     "callout": {
       "en": ["Cafe"]
     },
-    "night": {}
+    "night": {
+      "translate": "r50 r-40"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -79,7 +94,9 @@
     "callout": {
       "en": ["Bravo", "Shops"]
     },
-    "night": {}
+    "night": {
+      "translate": "r50 r-48"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -90,7 +107,9 @@
     "callout": {
       "en": ["B. Gate"]
     },
-    "night": {}
+    "night": {
+      "translate": "r50 r-50"
+    }
   }, {
     "classNames": ["callout", "anchor-left"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -101,7 +120,9 @@
     "callout": {
       "en": ["Arch"]
     },
-    "night": {}
+    "night": {
+      "translate": "r50 r-50"
+    }
   }, {
     "classNames": ["callout", "small", "anchor-left", "hide"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -112,7 +133,9 @@
     "callout": {
       "en": ["Stairs"]
     },
-    "night": {}
+    "night": {
+      "translate": "r50 r-50"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -123,7 +146,9 @@
     "callout": {
       "en": ["Garage"]
     },
-    "night": {}
+    "night": {
+      "translate": "r50 r-75"
+    }
   }, {
     "classNames": ["callout", "anchor-left"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -134,7 +159,9 @@
     "callout": {
       "en": ["Corner", "Windows"]
     },
-    "night": {}
+    "night": {
+      "translate": "r43 r-44"
+    }
   }, {
     "classNames": ["callout", "anchor-right"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -145,7 +172,9 @@
     "callout": {
       "en": ["A. Windows"]
     },
-    "night": {}
+    "night": {
+      "translate": "r45 r-40"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -156,7 +185,9 @@
     "callout": {
       "en": ["Hole"]
     },
-    "night": {}
+    "night": {
+      "translate": "r50 r-40"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -167,7 +198,9 @@
     "callout": {
       "en": ["A. Alley"]
     },
-    "night": {}
+    "night": {
+      "translate": "r40 r-30"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -178,7 +211,9 @@
     "callout": {
       "en": ["Abento"]
     },
-    "night": {}
+    "night": {
+      "translate": "r40 r-30"
+    }
   }, {
     "classNames": ["callout", "medium-regular", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -189,7 +224,9 @@
     "callout": {
       "en": ["SHOPS"]
     },
-    "night": {}
+    "night": {
+      "translate": "r40 r-33"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -200,7 +237,9 @@
     "callout": {
       "en": ["Supermarket"]
     },
-    "night": {}
+    "night": {
+      "translate": "r40 r-30"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -211,6 +250,8 @@
     "callout": {
       "en": ["A. Back Alley"]
     },
-    "night": {}
+    "night": {
+      "translate": "r40 r-30"
+    }
   }]
 }
