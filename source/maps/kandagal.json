@@ -1,7 +1,10 @@
 {
   "map": {
     "name": "kandagal",
-    "generateNightVariant": false
+    "generateNightVariant": true,
+    "night": {
+      "translate": "28 0"
+    }
   },
   "callouts": [{
     "classNames": ["callout", "anchor-middle"],
