@@ -19,6 +19,53 @@ const defaultEnvFile = path.join(rootDir, '.env')
 require('dotenv').config(defaultEnvFile)
 
 const BUILD_FOR_PRODUCTION = process.env.BUILD_FOR_PRODUCTION.toLowerCase() === 'true' || false
+const fontSizeClasses = [
+  'extra-small',
+  'small',
+  'regular',
+  'medium-regular',
+  'medium',
+  'large'
+]
+
+/**
+ * Appends night font size to a class and removes the daytime font size, if any
+ * exist.
+ * @param {string} classAsString A string of classes
+ * @param {Object} callout The callout object
+ */
+function appendNightFontSize(classAsString, callout) {
+  const nightFontClassName = (callout.night
+    && typeof callout.night.fontSizeClass === 'string'
+    && callout.night.fontSizeClass)
+    || false
+
+  // If there is no fontSizeClass for the night map, then nothing needs to be
+  // appended/replaced/modified. Or, if nightFontSize is not a valid font class
+  // name. Return `classAsString`.
+  if (nightFontClassName === false || fontSizeClasses.includes(nightFontClassName) === false) {
+    return classAsString
+  }
+
+  // An object containing all the classes from `classAsString`, minus any fonts
+  // classes.
+  const classAsStringNoFonts = {}
+
+  // Filters out non-fonts from `classAsString`
+  const dayFonts = classAsString.split(' ').map(className => {
+    if (fontSizeClasses.includes(className)) {
+      return className
+    }
+
+    classAsStringNoFonts[className] = true
+
+    return undefined
+  }).filter(Boolean)
+
+  const newClassString = classNames(classAsStringNoFonts, nightFontClassName)
+
+  return newClassString
+}
 
 function writeLines(lines) {
   let markup = ''
@@ -79,7 +126,11 @@ MapWriter.prototype.buildSVGRoot = function () {
     SVGRoot: true,
     production: this.options.writeForProduction,
     night: this.options.writeNightVariant
-  })
+  },
+  // The map name as a class
+  this.getMapName(),
+  // The base map name as a class
+  this.basemapName)
 
   return '<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"'
     + ' xmlns:xlink="http://www.w3.org/1999/xlink" width="1024px" height="1024px"'
@@ -125,31 +176,65 @@ MapWriter.prototype.buildDevelopmentNotice = function () {
 }
 
 // eslint-disable-next-line no-underscore-dangle
-MapWriter.prototype._calcFinalTranslate = function (translate) {
+/**
+ * Calculates the translation for a callout. If the translate coords are for a
+ * daytime map, then the coords are returned un-modified. coords are only
+ * recalculated based on a global and local translation properties specific for
+ * night maps.
+ */
+MapWriter.prototype._calcFinalTranslate = function (callout) {
   if (this.options.writeNightVariant === false) {
-    return translate
+    return callout.translate
   }
 
-  const globalNightTransform = (this.mapData.map.night
+  const normalTranslate = (callout.translate
+    && typeof callout.translate === 'string'
+    && callout.translate.split(' ').map(Number))
+    || console.warn('No callout translate coords given for unknown callout')
+  const globalNightTranslate = (this.mapData.map.night
     && typeof this.mapData.map.night.translate === 'string'
     && this.mapData.map.night.translate.split(' ').map(Number))
     || ['0', '0'].map(Number)
+  const localNightTranslate = (callout.night
+    && callout.night.translate
+    && typeof callout.night.translate === 'string'
+    && callout.night.translate.split(' '))
+    || ['r0', 'r0']
 
-  const curTranslate = translate.split(' ').map(Number)
+  let translate = localNightTranslate
 
-  return [curTranslate[0] + globalNightTransform[0], curTranslate[1] + globalNightTransform[1]].join(' ')
+  /**
+   * If the value of the night-time translate begins with `r`, indicating the
+   * value is 'relative' to the normal translate value, the `value` will be
+   * added to normal translate value. Otherwise, returns `value`, which is
+   * assumed to be absolute.
+   */
+  translate = translate.map((value, index) => {
+    if (value[0].toLowerCase() === 'r') {
+      return normalTranslate[index] + Number(value.substr(1))
+    }
+
+    return value
+  })
+
+  return [translate[0] + globalNightTranslate[0], translate[1] + globalNightTranslate[1]].join(' ')
 }
 
 MapWriter.prototype.buildCallout = function (callout) {
-  const isNightMap = this.options.writeNightVariant
+  const buildingNightMap = this.options.writeNightVariant
 
-  const transformString = `translate(${this._calcFinalTranslate(callout.translate)})`
+  const transformString = `translate(${this._calcFinalTranslate(callout)})`
     + ` rotate(${callout.rotate.length ? callout.rotate : '0'})`
-  const classString = classNames(callout.classNames, {
-    // Dynamically add hide to callouts that should only be rendered on night
+  let classString = classNames(callout.classNames, {
+    // Dynamically adds `hide` to callouts that should only be rendered on night
     // maps.
-    hide: callout.night_only && !isNightMap
+    hide: (callout.night_only && !buildingNightMap) || (callout.day_only && buildingNightMap)
   })
+
+  if (buildingNightMap) {
+    classString = appendNightFontSize(classString, callout)
+  }
+
   const calloutString = `<g transform="${transformString}" class="${classString}">
     <text>${writeLines(callout.callout[this.options.calloutLanguage])}</text>\n</g>`
 
