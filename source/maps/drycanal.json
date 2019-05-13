@@ -1,7 +1,10 @@
 {
   "map": {
     "name": "drycanal",
-    "generateNightVariant": false
+    "generateNightVariant": true,
+    "night": {
+      "translate": "28 47"
+    }
   },
   "callouts": [{
     "classNames": ["callout", "anchor-middle"],
@@ -15,12 +18,13 @@
     },
     "night": {}
   }, {
-    "classNames": ["callout", "anchor-middle", "hide"],
+    "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
     "exclude_gamemodes": [],
     "translate": "685 730",
     "styleString": "",
     "rotate": "",
+    "night_only": true,
     "callout": {
       "en": ["Embassy"]
     },
