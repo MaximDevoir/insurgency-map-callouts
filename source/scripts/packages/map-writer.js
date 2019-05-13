@@ -141,10 +141,15 @@ MapWriter.prototype._calcFinalTranslate = function (translate) {
 }
 
 MapWriter.prototype.buildCallout = function (callout) {
+  const isNightMap = this.options.writeNightVariant
+
   const transformString = `translate(${this._calcFinalTranslate(callout.translate)})`
     + ` rotate(${callout.rotate.length ? callout.rotate : '0'})`
-  const classString = classNames(callout.classNames)
-
+  const classString = classNames(callout.classNames, {
+    // Dynamically add hide to callouts that should only be rendered on night
+    // maps.
+    hide: callout.night_only && !isNightMap
+  })
   const calloutString = `<g transform="${transformString}" class="${classString}">
     <text>${writeLines(callout.callout[this.options.calloutLanguage])}</text>\n</g>`
 
