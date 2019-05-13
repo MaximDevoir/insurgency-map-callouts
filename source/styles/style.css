@@ -1,10 +1,8 @@
-.development_notice {
-  fill: red !important;
-  font-size: 2em !important;
+:root {
+  --standard-font-size: 12.2px
 }
-
 svg {
-  font-size: 12.2px;
+  font-size: var(--standard-font-size);
 }
 
 .production .hide {
@@ -44,6 +42,12 @@ svg {
 .hide path {
   stroke: red !important;
 }
+
+.development_notice {
+  fill: red !important;
+  font-size: 2em !important;
+}
+
 .callout.small {
   font-size: 0.85em;
 }
@@ -97,4 +101,8 @@ svg {
   stroke-width: 4px;
   stroke-linecap: butt;
   stroke-linejoin: miter;
+}
+
+.tell_night {
+  font-size: calc(var(--standard-font-size) * 0.95)
 }
