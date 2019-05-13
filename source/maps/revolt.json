@@ -1,7 +1,10 @@
 {
   "map": {
     "name": "revolt",
-    "generateNightVariant": false
+    "generateNightVariant": true,
+    "night": {
+      "translate": "0 0"
+    }
   },
   "callouts": [{
     "classNames": ["callout", "anchor-middle"],
