@@ -1,7 +1,7 @@
 {
   "map": {
     "name": "heights",
-    "generateNightVariant": false
+    "generateNightVariant": true
   },
   "callouts": [{
     "classNames": ["callout", "anchor-middle"],
@@ -13,7 +13,9 @@
     "callout": {
       "en": ["Firewood", "House"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-48 r55"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -21,8 +23,21 @@
     "translate": "650 270",
     "styleString": "",
     "rotate": "",
+    "day_only": true,
     "callout": {
       "en": ["Gecho 3"]
+    },
+    "night": {}
+  }, {
+    "classNames": ["callout", "anchor-middle"],
+    "active_gamemodes": ["ALL", "ambush"],
+    "exclude_gamemodes": [],
+    "translate": "580 320",
+    "styleString": "",
+    "rotate": "",
+    "night_only": true,
+    "callout": {
+      "en": ["Echo 3"]
     },
     "night": {}
   }, {
@@ -35,7 +50,9 @@
     "callout": {
       "en": ["Bunker"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-53 r33"
+    }
   }, {
     "classNames": ["callout", "anchor-middle", "hide"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -57,7 +74,9 @@
     "callout": {
       "en": ["Farmhouse"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-100 r35"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -68,7 +87,9 @@
     "callout": {
       "en": ["Cottage"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-85 r25"
+    }
   }, {
     "classNames": ["callout", "small", "anchor-right"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -79,18 +100,22 @@
     "callout": {
       "en": ["Broken Wall"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-65 r3"
+    }
   }, {
     "classNames": ["callout", "small", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
     "exclude_gamemodes": [],
     "translate": "585 600",
     "styleString": "",
-    "rotate": "",
+    "rotate": "-15",
     "callout": {
       "en": ["Bridge"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-60 r11"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -101,7 +126,9 @@
     "callout": {
       "en": ["Bridge", "House"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-73 r2"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -112,7 +139,9 @@
     "callout": {
       "en": ["Upstream River"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-55 r15"
+    }
   }, {
     "classNames": ["callout", "anchor-left"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -123,7 +152,9 @@
     "callout": {
       "en": ["Downstream River"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-65 r15"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -134,7 +165,9 @@
     "callout": {
       "en": ["Radio"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-57 r8"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -145,7 +178,9 @@
     "callout": {
       "en": ["Tarp"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-50 r-2"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -156,7 +191,9 @@
     "callout": {
       "en": ["Humvee"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-70 r-46"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -167,7 +204,9 @@
     "callout": {
       "en": ["Workshop"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-51 r-28"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -178,7 +217,9 @@
     "callout": {
       "en": ["Apartments"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-63 r-28"
+    }
   }, {
     "classNames": ["callout", "small", "anchor-right"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -189,7 +230,9 @@
     "callout": {
       "en": ["A. Skinny"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-53 r-46"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -200,7 +243,9 @@
     "callout": {
       "en": ["Convoy"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-53 r-46"
+    }
   }, {
     "classNames": ["callout", "anchor-right"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -211,7 +256,9 @@
     "callout": {
       "en": ["Bravo", "Windows"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-35 r-10"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -222,18 +269,22 @@
     "callout": {
       "en": ["B. Yard"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-35 r-25"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
     "exclude_gamemodes": [],
-    "translate": "330 540",
+    "translate": "320 600",
     "styleString": "",
     "rotate": "30",
     "callout": {
       "en": ["Garden"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-30 r0"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -244,7 +295,9 @@
     "callout": {
       "en": ["Buried Tank"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-40 r22"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -255,7 +308,9 @@
     "callout": {
       "en": ["Intel"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-35 r33"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -266,7 +321,9 @@
     "callout": {
       "en": ["Mancave"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-40 r30"
+    }
   }, {
     "classNames": ["callout", "anchor-right"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -277,7 +334,9 @@
     "callout": {
       "en": ["Gun Range"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-30 r10"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -288,7 +347,9 @@
     "callout": {
       "en": ["Crossfire"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-30 r15"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -299,6 +360,8 @@
     "callout": {
       "en": ["Center", " Field"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-53 r22"
+    }
   }]
 }
