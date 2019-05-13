@@ -1,7 +1,10 @@
 {
   "map": {
     "name": "tell",
-    "generateNightVariant": false
+    "generateNightVariant": true,
+    "night": {
+      "translate": "0 0"
+    }
   },
   "callouts": [{
     "classNames": ["callout", "anchor-middle"],
@@ -13,7 +16,9 @@
     "callout": {
       "en": ["Dungeon"]
     },
-    "night": {}
+    "night": {
+      "translate": "r20 r0"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -21,6 +26,7 @@
     "translate": "215 70",
     "styleString": "font-size: 2em;",
     "rotate": "",
+    "day_only": true,
     "callout": {
       "en": ["☺"]
     },
@@ -35,7 +41,9 @@
     "callout": {
       "en": ["Lounge"]
     },
-    "night": {}
+    "night": {
+      "translate": "r10 r-10"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -46,7 +54,9 @@
     "callout": {
       "en": ["Fountain"]
     },
-    "night": {}
+    "night": {
+      "translate": "r34 r-10"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -57,7 +67,9 @@
     "callout": {
       "en": ["Mattresses (under)"]
     },
-    "night": {}
+    "night": {
+      "translate": "r50 r-7"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -68,7 +80,9 @@
     "callout": {
       "en": ["Charlie 4", "Tree"]
     },
-    "night": {}
+    "night": {
+      "translate": "r35 r-28"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -79,7 +93,9 @@
     "callout": {
       "en": ["Column Pit"]
     },
-    "night": {}
+    "night": {
+      "translate": "r50 r-20"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -90,7 +106,9 @@
     "callout": {
       "en": ["Burning", "Van"]
     },
-    "night": {}
+    "night": {
+      "translate": "r50 r-25"
+    }
   }, {
     "classNames": ["callout", "hide"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -101,7 +119,9 @@
     "callout": {
       "en": ["Ruins Ramp"]
     },
-    "night": {}
+    "night": {
+      "translate": "r25 r-50"
+    }
   }, {
     "classNames": ["callout", "medium"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -112,18 +132,23 @@
     "callout": {
       "en": ["Ruins"]
     },
-    "night": {}
+    "night": {
+      "translate": "r15 r-30",
+      "fontSizeClass": "medium-regular"
+    }
   }, {
-    "classNames": ["callout", "anchor-middle"],
+    "classNames": ["callout", "anchor-right"],
     "active_gamemodes": ["ALL", "ambush"],
     "exclude_gamemodes": [],
-    "translate": "350 460",
+    "translate": "365 460",
     "styleString": "",
     "rotate": "",
     "callout": {
       "en": ["Ruins", "Window"]
     },
-    "night": {}
+    "night": {
+      "translate": "r15 r-45"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -134,7 +159,9 @@
     "callout": {
       "en": ["@"]
     },
-    "night": {}
+    "night": {
+      "translate": "r27 r-47"
+    }
   }, {
     "classNames": ["callout"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -145,7 +172,9 @@
     "callout": {
       "en": ["Checker Hall"]
     },
-    "night": {}
+    "night": {
+      "translate": "r25 r-47"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -156,7 +185,9 @@
     "callout": {
       "en": ["Checkers (upper", "/lower)"]
     },
-    "night": {}
+    "night": {
+      "translate": "r22 r-50"
+    }
   }, {
     "classNames": ["callout"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -167,7 +198,9 @@
     "callout": {
       "en": ["Ballroom"]
     },
-    "night": {}
+    "night": {
+      "translate": "r30 r-68"
+    }
   }, {
     "classNames": ["callout"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -178,18 +211,22 @@
     "callout": {
       "en": ["Courtyard"]
     },
-    "night": {}
+    "night": {
+      "translate": "r34 r-80"
+    }
   }, {
-    "classNames": ["callout"],
+    "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
     "exclude_gamemodes": [],
-    "translate": "205 550",
+    "translate": "219 550",
     "styleString": "",
     "rotate": "",
     "callout": {
       "en": ["Pond"]
     },
-    "night": {}
+    "night": {
+      "translate": "r35 r-51"
+    }
   }, {
     "classNames": ["callout", "medium", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -200,7 +237,10 @@
     "callout": {
       "en": ["Ramp"]
     },
-    "night": {}
+    "night": {
+      "translate": "r43 r-60",
+      "fontSizeClass": "medium-regular"
+    }
   }, {
     "classNames": ["callout", "medium", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -211,9 +251,12 @@
     "callout": {
       "en": ["Ramp"]
     },
-    "night": {}
+    "night": {
+      "translate": "r43 r-60",
+      "fontSizeClass": "medium-regular"
+    }
   }, {
-    "classNames": ["callout"],
+    "classNames": ["callout", "anchor-left"],
     "active_gamemodes": ["ALL", "ambush"],
     "exclude_gamemodes": [],
     "translate": "135 595",
@@ -222,7 +265,9 @@
     "callout": {
       "en": ["Van"]
     },
-    "night": {}
+    "night": {
+      "translate": "r40 r-60"
+    }
   }, {
     "classNames": ["callout"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -233,18 +278,23 @@
     "callout": {
       "en": ["Truck"]
     },
-    "night": {}
+    "night": {
+      "translate": "r52 r-70"
+    }
   }, {
-    "classNames": ["callout", "medium"],
+    "classNames": ["callout", "medium", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
     "exclude_gamemodes": [],
-    "translate": "270 595",
+    "translate": "330 591",
     "styleString": "",
     "rotate": "",
     "callout": {
       "en": ["Middle Stairs"]
     },
-    "night": {}
+    "night": {
+      "translate": "r20 r-58",
+      "fontSizeClass": "medium-regular"
+    }
   }, {
     "classNames": ["callout", "small", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -255,7 +305,9 @@
     "callout": {
       "en": ["Dumpster", "Stairs"]
     },
-    "night": {}
+    "night": {
+      "translate": "r20 r-65"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -266,7 +318,9 @@
     "callout": {
       "en": ["Bravo-Road", "Stairs"]
     },
-    "night": {}
+    "night": {
+      "translate": "r24 r-70"
+    }
   }, {
     "classNames": ["callout"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -277,7 +331,9 @@
     "callout": {
       "en": ["Bravo", "Sniper Wall"]
     },
-    "night": {}
+    "night": {
+      "translate": "r4 r-73"
+    }
   }, {
     "classNames": ["callout", "medium"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -288,7 +344,10 @@
     "callout": {
       "en": ["Bravo Road"]
     },
-    "night": {}
+    "night": {
+      "translate": "r20 r-80",
+      "fontSizeClass": "medium-regular"
+    }
   }, {
     "classNames": ["callout"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -299,7 +358,9 @@
     "callout": {
       "en": ["A. Stairs"]
     },
-    "night": {}
+    "night": {
+      "translate": "r10 r-45"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -310,7 +371,9 @@
     "callout": {
       "en": ["Bushes"]
     },
-    "night": {}
+    "night": {
+      "translate": "r10 r-55"
+    }
   }, {
     "classNames": ["callout", "medium"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -321,7 +384,10 @@
     "callout": {
       "en": ["Alpha Road"]
     },
-    "night": {}
+    "night": {
+      "translate": "r10 r-50",
+      "fontSizeClass": "medium-regular"
+    }
   }, {
     "classNames": ["callout"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -332,7 +398,9 @@
     "callout": {
       "en": ["Apartments"]
     },
-    "night": {}
+    "night": {
+      "translate": "r10 r-45"
+    }
   }, {
     "classNames": ["callout"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -343,9 +411,12 @@
     "callout": {
       "en": ["Alpha Corridor"]
     },
-    "night": {}
+    "night": {
+      "translate": "r0 r-47",
+      "fontSizeClass": "small"
+    }
   }, {
-    "classNames": ["callout", "anchor-middle", "medium-regular"],
+    "classNames": ["callout", "anchor-middle", "medium"],
     "active_gamemodes": ["ALL", "ambush"],
     "exclude_gamemodes": [],
     "translate": "460 600",
@@ -354,7 +425,10 @@
     "callout": {
       "en": ["Fox Road"]
     },
-    "night": {}
+    "night": {
+      "translate": "r5 r-60",
+      "fontSizeClass": "medium-regular"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -365,7 +439,9 @@
     "callout": {
       "en": ["Rafters"]
     },
-    "night": {}
+    "night": {
+      "translate": "r3 r-67"
+    }
   }, {
     "classNames": ["callout"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -376,7 +452,9 @@
     "callout": {
       "en": ["Bridge"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-20 r-43"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -387,7 +465,9 @@
     "callout": {
       "en": ["A. Barrier"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-10 r-40"
+    }
   }, {
     "classNames": ["callout", "small", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -398,7 +478,9 @@
     "callout": {
       "en": ["Ledges"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-12 r-45"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -409,7 +491,9 @@
     "callout": {
       "en": ["Alpha Sniper", "Wall (far)"]
     },
-    "night": {}
+    "night": {
+      "translate": "r-40 r-30"
+    }
   }, {
     "classNames": ["callout"],
     "active_gamemodes": ["ALL", "ambush"],
@@ -420,6 +504,8 @@
     "callout": {
       "en": ["Ruined", "Bldg."]
     },
-    "night": {}
+    "night": {
+      "translate": "r-27 r-46"
+    }
   }]
 }
