@@ -234,6 +234,7 @@ A special thanks to those who contributed to the development of this mod and the
 naming of callouts. These are the wonderful people who contributed:
 
 * [|VIP| GOD](https://steamcommunity.com/id/thealmightyabove/)
+* [Wolfskopf 🐺](https://steamcommunity.com/id/wolfskopf-vip/)
 * [Dr. Mikhail](#Contributors)
 * [Planetesimal <img src="https://steamcommunity-a.akamaihd.net/economy/emoticon/insfist"/>](https://steamcommunity.com/profiles/76561198015347912/)
 
