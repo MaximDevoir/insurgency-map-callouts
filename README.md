@@ -7,12 +7,6 @@ You can view the progress for map callouts on the
 [milestone](https://github.com/MaximDevoir/insurgency-map-callouts/milestone/1)
 page.
 
-If you want to create callouts for a map, view our [contributing](#contributing)
-documentation and see which maps [still need
-callouts](https://github.com/MaximDevoir/insurgency-map-callouts/issues?q=is%3Aopen+is%3Aissue+label%3Acallouts).
-
-To create callouts for a new map, view [this section](#callouts-for-a-new-map).
-
 View the released mod at the
 [Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1690177643)
 
@@ -20,9 +14,8 @@ View the released mod at the
 
 ### Installation
 
-**Note**: Before installing or "git cloning", please ensure you have all the
-[`prerequisites`](#prerequisites) and have set your
-[`GAME_LOCATION`](#game_location) environment variable.
+**Note**: Ensure you have all the [`prerequisites`](#prerequisites) and have set
+your [`GAME_LOCATION`](#game_location) environment variable.
 
 To begin working on the maps, run:
 
@@ -34,7 +27,10 @@ npm start        # Initializes your map overviews
 
 That's it!
 
-You can now view any `.svg` file from `source/maps` in your [web browser](#web-browser).
+You can now edit any `.json` file from `source/maps`.
+
+To view your saved changes, open the `.svg` file from `source/external/maps` in
+your [web browser](#web-browser).
 
 ### Building
 
@@ -43,12 +39,12 @@ When you are ready to generate a Steam Workshop
 commands:
 
 ```bash
-npm start
+npm start # Exit process after all maps have a built .svg file.
 
 npm run build
 ```
 
-The generated `vpk` file in your `build` folder.
+The generated `vpk` file will be in your `build` folder.
 
 ### Prerequisites
 
@@ -74,8 +70,8 @@ system.
 
 #### Node
 
-* [Node](https://nodejs.org/en/download/), LTS version `>=10.15.1, < 11.0.0`
-  recommended.
+* [Node](https://nodejs.org/en/download/), LTS version `>=10.15.1, < 11.0.0` or
+  LTS/dubnium recommended.
 
 #### Yarn (optional)
 
@@ -86,7 +82,7 @@ system.
 
 Environment variables are variables that are set the project's `.env` file.
 
-### GAME_LOCATION
+#### GAME_LOCATION
 
 The `GAME_LOCATION` variable is the folder of your Insurgency game. This
 variable is not automatically generated. However, during `npm start`, the
@@ -98,22 +94,32 @@ Example of `GAME_LOCATION`:
 GAME_LOCATION=C:\Program Files\Steam\steamapps\common\insurgency2
 ```
 
-### MOD_NAME
+#### MOD_NAME
 
 The `MOD_NAME` variable is the name of the mod. This variable may only contain
 characters that are legal in a Windows filename. Example, characters like `*`,
 `/`, and `?` are illegal and the software will fail.
 
-### GITHUB_REPO
+#### GITHUB_REPO
 
 The `GITHUB_REPO` variable is the path pointing to the where the project's
 source code is hosted at.
 
-### VTF_CMD
+#### VTF_CMD
 
 The `VTF_CMD` variable is the path to your `VTFCmd.exe` file. This variable will
 be automatically generated, during `npm start`, if the path does not point to a
 valid point and you choose to download the VTFLib binaries.
+
+#### BUILD_FOR_PRODUCTION
+
+The `BUILD_FOR_PRODUCTION` variable tells the software if maps should be
+generated in production mode. When set to `false`, maps will have a development
+notice in the corners of each map. Additionally,callouts that are hidden, or
+callouts that would otherwise not be rendered in production mode, will be shown
+\- usually in red.
+
+This should only be set to `true` before you [build](#Building) the mod.
 
 ## Adapting to Other Games
 
@@ -121,8 +127,8 @@ This software was built in mind with adapting it to other Source engine games be
 as easy as possible. For games that store their map overview textures in
 `root/materials/overviews`, such as [Day of
 Infamy](https://store.steampowered.com/app/447820/Day_of_Infamy/), less than 5
-lines of code need to be changed. And with a little more tweaking, it can be adapted
-to other games as well.
+lines of code need to be changed. And with a little more tweaking, it can be
+adapted to other games as well.
 
 ## Directory Structure
 
@@ -135,20 +141,63 @@ TODO: Add directory structure and information regarding directories.
 Thank you for your interest. Yes, contributions are welcome. Please read below
 to understand when and how to contribute.
 
-### Callouts for a New Map
+Callouts are stored in `.json` files under `source/maps`.
 
-To start callouts on a new map:
+### Callouts for an Existing Map
 
-1. Create a duplicate of the file `new_map_boilerplate.svg`, located at
-   `source/maps`, and rename it to the name of the map you want to create
-   callouts for, all lowercase. (e.x. you want to make callouts for a map called
-   Ministry, the file name would be `ministry.svg`)
-2. Find and replace all instances of `%MAP_NAME%` in the file you just created
-   to the name of the map (again, all lowercase)
-3. Run `npm start`. This will find the background for the map as well as add
-   styling components to the image.
+To create a callout for a new map, add an `object` to the `callouts` array.
 
-You're ready to create callouts.
+Annotated callout object:
+
+```json
+{
+  "classNames": ["callout", <fontSizeClass>, <anchorClass>, ...], # `callout` class is required. Each element is its own class. Order of class names is not important.
+  "active_gamemodes": ["ALL", "ambush"],
+  "exclude_gamemodes": [],
+  "translate": "0 0", # Required
+  "translate": "570 280", # Absolute coordinates of callout
+  "styleString": "", # Manually input styles into callout. Not recommended.
+  "rotate": "", # Required but may be left as empty string.
+  "rotate": "25", # Rotation of callout, Leave as empty string for default rotation of `0`.
+  "day_only": boolean, # Optional. Whether or not the callout should only be rendered for day time maps.
+  "night_only": boolean, # Optional. Whether or not the callout should only be rendered for night time maps.
+  "callout": { # A callout with the default language is required
+    "en": [], # A lang-code and an array of strings
+    "en": ["Example", "Callout"], # Lang code is `en` for English. Every element is its own line.
+    "es": ["Texto de", "Ejemplo"],
+  },
+  "night": {
+    "translate": "", # Optional
+    "translate": "r20 r-50", # example using relative translation to the callouts regular translate value.
+    "translate": "590 230", # example using absolute translate coordinates.
+    "fontSizeClass": "<fontSizeClass>", # Optional. If set, will override the day time font size.
+    "fontSizeClass": "medium-regular", # Value must be one of fontSizeClass
+  }
+}
+```
+
+#### fontSizeClass
+
+The default font class is `regular`.
+
+A font size class is any of
+
+* `extra-small`
+* `small`
+* `regular`
+* `medium-regular`
+* `medium`
+* `large`
+
+#### anchorClass
+
+The default anchor class is `anchor-left`.
+
+An anchor class is any of
+
+* `anchor-left`
+* `anchor-middle`
+* `anchor-right`
 
 ### Submitting Your Contribution
 
@@ -167,27 +216,29 @@ Callout contributions are welcomed provided that:
 * the callout is clean and friendly
 * the callout makes logical sense
 * the source code for the callout follows the standards in place
-* the callout is for the ambush game mode. 
-  * **Question:** Can I submit a callout for another game mode? 
+* the callout is for the ambush game mode.
+  * **Question:** Can I submit a callout for another game mode?
   * **Answer:** Yes. Provided that it does not overlap with a callout for the
     ambush game mode.
-
-Callout contributions **will not be accepted** for:
-
-* night maps.  
-  * **Question:** Why?
-  * **Answer:** To discourage the use of maintaining the same callouts for two
-    maps. If you have a callout, please submit it to only the daytime map. In
-    the future, night map callouts will automatically be generated from the
-    callouts given in the daytime map.
 
 ### Logic
 
 Before making big changes to the `js` files, or the logic in the software,
-please file a [GitHub Issue](./issue) describing the idea.
+please file a [GitHub Issue](/issues) describing the idea.
 
 All `js` files should meet the standards set by `.eslintrc.json`.
 
+## Contributors
+
+A special thanks to those who contributed to the development of this mod and the
+naming of callouts. These are the wonderful people who contributed:
+
+* [|VIP| GOD](https://steamcommunity.com/id/thealmightyabove/)
+* [Dr. Mikhail](#Contributors)
+* [Planetesimal <img src="https://steamcommunity-a.akamaihd.net/economy/emoticon/insfist"/>](https://steamcommunity.com/profiles/76561198015347912/)
+
+Additional thanks to the [VIP Gaming Community](https://vipgc.org).
+
 ## Copyright and Licensing
 
-See [LICENSE.md](LICENSE.md) for license terms.
+See [LICENSE](LICENSE.md) for license terms.
