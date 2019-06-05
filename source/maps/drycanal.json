@@ -21,7 +21,7 @@
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
     "exclude_gamemodes": [],
-    "translate": "685 730",
+    "translate": "690 740",
     "styleString": "",
     "rotate": "",
     "night_only": true,
