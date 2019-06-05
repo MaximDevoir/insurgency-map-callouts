@@ -21,14 +21,16 @@
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
     "exclude_gamemodes": [],
-    "translate": "690 740",
+    "translate": "685 730",
     "styleString": "",
     "rotate": "",
     "night_only": true,
     "callout": {
       "en": ["Embassy"]
     },
-    "night": {}
+    "night": {
+      "translate": "r5 r10"
+    }
   }, {
     "classNames": ["callout", "anchor-middle"],
     "active_gamemodes": ["ALL", "ambush"],
