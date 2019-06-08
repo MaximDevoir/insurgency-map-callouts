@@ -8,7 +8,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "node source/scripts/build.js",
+    "build": "cross-env BUILD_FOR_PRODUCTION=true node source/scripts/build.js",
     "preinstall": "node source/scripts/preinstall.js",
     "prestart": "node source/scripts/precheck.js",
     "start": "node source/scripts/watch.js"
@@ -21,6 +21,7 @@
     "chokidar": "^3.0.0",
     "classnames": "^2.2.6",
     "convert-svg-to-png": "^0.5.0",
+    "cross-env": "^5.2.0",
     "detect-newline": "^2.1.0",
     "dotenv": "^7.0.0",
     "download": "^7.1.0",
