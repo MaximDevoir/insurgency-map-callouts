@@ -242,4 +242,4 @@ Additional thanks to the [VIP Gaming Community](https://vipgc.org).
 
 ## Copyright and Licensing
 
-See <LICENSE> for license terms.
+See [LICENSE](LICENSE).
