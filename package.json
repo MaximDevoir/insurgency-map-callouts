@@ -3,7 +3,7 @@
   "version": "2.1.1",
   "description": "A package that simplifies the many steps that go into creating a map overviews texture mod for the Steam Workshop.",
   "author": "Maxim Devoir <maximdevoir@hotmail.com>",
-  "license": "AGPL-3.0-only",
+  "license": "(MIT AND UNLICENSED)",
   "engines": {
     "node": ">=10"
   },
