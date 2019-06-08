@@ -18,9 +18,16 @@ function watchLog(type, mapPath) {
 
   process.stdout.write('[' + chalk.keyword('yellow')('info') + `] ${basename} has been ${type}\n`)
 
-  buildMap(mapPath, build => {
-    process.stdout.write('[' + chalk.keyword('green')('success') + `] ${build.getMapName()} has been built\n`)
-  })
+  try {
+    buildMap(mapPath, build => {
+      const mapName = build.getMapName()
+      process.stdout.write('[' + chalk.keyword('green')('success') + `] ${mapName} has been built\n`)
+    })
+  } catch (err) {
+    process.stderr.write('[' + chalk.keyword('red')('error') + `] ${basename}.json could not be built\n`)
+    // eslint-disable-next-line no-console
+    console.error(err)
+  }
 }
 
 function watchAndBuild(nextStep) {
