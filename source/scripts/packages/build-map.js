@@ -9,7 +9,7 @@ const MapWriter = require('./map-writer')
  * night variant.
  * @param {string} mapPath The path to the JSON file.
  */
-function buildMap(mapPath, onBuild, writeDir) {
+function buildMap(mapPath, onBuildSuccess, writeDir) {
   if (!isFile(mapPath)) {
     throw Error(`The path - ${mapPath} - is not a file.`)
   }
@@ -30,11 +30,11 @@ function buildMap(mapPath, onBuild, writeDir) {
 
   const map = new MapWriter(mapPath, mapOptions)
 
-  map.write(onBuild)
+  map.write(onBuildSuccess)
 
   if (hasNightVariant) {
     map.options.writeNightVariant = true
-    map.write(onBuild)
+    map.write(onBuildSuccess)
   }
 
   return true

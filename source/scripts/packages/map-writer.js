@@ -85,7 +85,6 @@ function writeLines(lines) {
  * @param {string} mapPath The absolute path of the JSON map to read.
  */
 function MapWriter(mapPath, options) {
-
   this.mapPath = mapPath
 
   if (!path.isAbsolute(mapPath)) {
