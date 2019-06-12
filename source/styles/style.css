@@ -1,5 +1,5 @@
 :root {
-  --standard-font-size: 12.2px
+  --standard-font-size: 13.4px
 }
 svg {
   font-size: var(--standard-font-size);
