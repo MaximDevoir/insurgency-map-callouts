@@ -141,10 +141,10 @@ MapWriter.prototype.injectStyleNode = function () {
     return ''
   }
 
-  let styleString = '<style type="text/css">'
-  styleString += '<![CDATA[\n' + fs.readFileSync(stylesheetPath, 'utf8') + '\n]]>\n'
-  styleString += '</style>'
-  return styleString
+  let styleNode = '<style type="text/css">'
+  styleNode += '<![CDATA[\n' + fs.readFileSync(stylesheetPath, 'utf8') + '\n]]>\n'
+  styleNode += '</style>'
+  return styleNode
 }
 
 MapWriter.prototype.buildTitle = function () {
