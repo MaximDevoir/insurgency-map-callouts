@@ -158,6 +158,13 @@ MapWriter.prototype.getOverviewImagePath = function () {
   )
 }
 
+MapWriter.prototype.getEmblemImagePath = function () {
+  return path.relative(
+    this.options.writeDir,
+    path.join(sourceDir, 'maps', 'emblem', 'emblem.png')
+  )
+}
+
 MapWriter.prototype.buildMapGroup = function () {
   return `<g id="map">
     <image y="0" x="0" preserveAspectRatio="none"
@@ -170,7 +177,7 @@ MapWriter.prototype.buildEmblem = function () {
   return `<g id="emblem" class="emblem">
     <image y="10" x="10" preserveAspectRatio="none"
       height="93" width="93"
-      href="./../../emblem.png" />
+      href="${this.getEmblemImagePath()}" />
   </g>`
 }
 
