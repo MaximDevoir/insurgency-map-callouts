@@ -3,6 +3,7 @@
 }
 svg {
   font-size: var(--standard-font-size);
+  font-variant: all-small-caps;
 }
 
 .production .hide {
