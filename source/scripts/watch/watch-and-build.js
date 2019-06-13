@@ -14,9 +14,15 @@ const sourceDir = path.join(scriptsDir, '..')
 const mapsDir = path.join(sourceDir, 'maps')
 
 function watchLog(type, mapPath) {
-  const basename = path.basename(mapPath, '.json')
+  const basename = path.basename(mapPath.toLowerCase(), '.json')
+  const isJSONFile = path.basename(mapPath.toLowerCase()).endsWith('.json')
 
   process.stdout.write('[' + chalk.keyword('yellow')('info') + `] ${basename} has been ${type}\n`)
+
+  if (!isJSONFile) {
+    process.stdout.write('[' + chalk.keyword('green')('skipping') + `] Ignoring non-json file ${basename}\n`)
+    return
+  }
 
   try {
     buildMap(mapPath, build => {
