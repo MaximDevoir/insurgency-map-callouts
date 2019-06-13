@@ -30,6 +30,16 @@ svg {
   fill: red !important;
 }
 
+.path {
+  color: #fff936;
+  opacity: 0.25;
+  /* TODO: drop shadow or something to soften the edges */
+}
+
+.night .path {
+  color: #c9ffb8;
+  opacity: 0.35;
+}
 /* Shares all properties and values with `.hide`. This style should be placed at
  *  the top-most node of a callout. See `.hide` for more info.
  */
