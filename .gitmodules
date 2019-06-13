@@ -1,0 +1,3 @@
+[submodule "source/maps"]
+	path = source/maps
+	url = git@github.com:MaximDevoir/map-callouts.git
