@@ -10,7 +10,7 @@ const stagedMapsPath = path.join(rootDir, 'build', 'staged', 'maps')
 /**
  * Build maps for all json files and moves them into the staged maps directory
  */
-function stageMaps(next) {
+function stageMaps() {
   process.stdout.write('\n\nStaging maps\n')
 
   const mapList = maps.getSync()
@@ -21,7 +21,7 @@ function stageMaps(next) {
         process.stdout.write('[' + chalk.green('success') + `] Built and staged ${mapObj.getMapName()}\n`)
       }, stagedMapsPath)
     } catch (err) {
-      console.log(err)
+      console.error(err)
 
       process.stdout.write('\n[' + chalk.red('failed') + '] unable to stage image')
       process.stdout.write(chalk.red('\nExiting now\n'))
@@ -29,8 +29,17 @@ function stageMaps(next) {
       process.exit(1)
     }
   })
+}
+
+function stageEmblem() {
+
+}
+
+function stageImages(next) {
+  stageMaps()
+  stageEmblem()
 
   return (typeof next === 'function' && next(), undefined)
 }
 
-module.exports = stageMaps
+module.exports = stageImages
