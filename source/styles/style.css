@@ -92,12 +92,12 @@ svg {
 }
 
 .callout {
-  opacity: 0.8;
+  opacity: 0.9;
   font-family: Calibri;
   fill: #ffffff;
   fill-opacity: 1;
   paint-order: stroke;
-  stroke: #000000;
+  stroke: #000000a8;
   stroke-width: 4px;
   stroke-linecap: butt;
   stroke-linejoin: miter;
