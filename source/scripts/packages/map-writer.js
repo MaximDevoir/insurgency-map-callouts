@@ -166,12 +166,20 @@ MapWriter.prototype.buildMapGroup = function () {
   </g>`
 }
 
+MapWriter.prototype.buildEmblem = function () {
+  return `<g id="emblem" class="emblem">
+    <image y="10" x="10" preserveAspectRatio="none"
+      height="93" width="93"
+      href="./../../emblem.png" />
+  </g>`
+}
+
 MapWriter.prototype.buildDevelopmentNotice = function () {
   if (this.options.writeForProduction) {
     return ''
   }
 
-  return '<g><text class="callout development_notice" x="20" y="50">DEVELOPMENT MODE </text></g>'
+  return '<g><text class="callout anchor-right development_notice" x="1004" y="24">DEVELOPMENT MODE </text></g>'
 }
 
 // eslint-disable-next-line no-underscore-dangle
@@ -277,6 +285,7 @@ MapWriter.prototype.buildContents = function () {
     + this.injectStyleNode()
     + this.buildTitle()
     + this.buildMapGroup()
+    + this.buildEmblem()
     + this.buildCalloutsGroup()
     + this.buildDevelopmentNotice()
     + '\n</svg>'
