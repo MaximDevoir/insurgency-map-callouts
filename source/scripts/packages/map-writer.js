@@ -176,7 +176,7 @@ MapWriter.prototype.buildMapGroup = function () {
 
 MapWriter.prototype.buildEmblem = function () {
   return `<g id="emblem" class="emblem">
-    <image y="10" x="10" preserveAspectRatio="none"
+    <image y="21" x="21" preserveAspectRatio="none"
       height="93" width="93"
       href="${this.getEmblemImagePath()}" />
   </g>`
