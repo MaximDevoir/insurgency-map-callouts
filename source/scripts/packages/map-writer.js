@@ -250,7 +250,7 @@ MapWriter.prototype.buildCallout = function (callout) {
   })
 
   if (Math.abs(rotateInt) >= 50) {
-    styleString = `letter-spacing: 0.7px; ${styleString}`
+    styleString = `letter-spacing: 0.8px; ${styleString}`
   }
 
   if (buildingNightMap) {
