@@ -125,3 +125,9 @@ svg {
 .tell_night {
   font-size: calc(var(--standard-font-size) * 0.95)
 }
+
+/* These snow maps are bright. Darken the text to increase visibility of the
+    callouts. */
+.snow_map, .verticality text, .heights text {
+  stroke: #000000db;
+}
