@@ -122,6 +122,9 @@ svg {
   stroke-linejoin: miter;
 }
 
+/* Tell Night usable map area is smaller than day variant. Marginally decrease
+    root font-size. */
+
 .tell_night {
   font-size: calc(var(--standard-font-size) * 0.95)
 }
