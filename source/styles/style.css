@@ -108,6 +108,8 @@ svg {
 
 .night .callout {
   fill: #c9ffb8;
+  opacity: 0.95;
+  stroke: #000000cf;
 }
 
 .callout {
