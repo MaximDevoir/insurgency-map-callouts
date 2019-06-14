@@ -33,20 +33,21 @@ svg {
  *  callouts.
  */
 .hide {
-  opacity: 1 !important;
-  fill-opacity: 0.7 !important;
+  opacity: 0.8 !important;
+  fill-opacity: 0.8 !important;
   fill: red !important;
 }
 
 .path {
-  color: #fff936;
-  opacity: 0.25;
+  color: #fff93652;
+  stroke: #ffe529a3;
+  stroke-width: 1px;
   /* TODO: drop shadow or something to soften the edges */
 }
 
 .night .path {
-  color: #c9ffb8;
-  opacity: 0.35;
+  color: #c9ffb852;
+  stroke: #c9ffb8;
 }
 /* Shares all properties and values with `.hide`. This style should be placed at
  *  the top-most node of a callout. See `.hide` for more info.
@@ -91,7 +92,7 @@ svg {
 }
 
 .callout.medium-regular {
-  font-size: 1.4em;
+  font-size: 1.35em;
   letter-spacing: 1.5px;
 }
 
@@ -111,12 +112,12 @@ svg {
 
 .callout {
   opacity: 0.85;
-  font-family: Calibri;
+  font-family: "Calibri"; /* Similar candidates would be: Corbel*/
   fill: #ffffff;
   fill-opacity: 1;
   paint-order: stroke;
   stroke: #000000a8;
-  stroke-width: 4px;
+  stroke-width: 5px;
   stroke-linecap: butt;
   stroke-linejoin: miter;
 }

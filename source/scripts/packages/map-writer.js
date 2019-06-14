@@ -1,3 +1,4 @@
+/* eslint-disable no-case-declarations */
 'use strict'
 
 /* eslint-disable no-underscore-dangle, func-names */
@@ -13,7 +14,7 @@ const rootDir = path.join(sourceDir, '..')
 const externalDir = path.join(rootDir, 'source', 'external')
 const externalMapsDir = path.join(rootDir, 'source', 'external', 'maps')
 const stylesheetPath = path.join(sourceDir, 'styles', 'style.css')
-
+const outlinesDir = path.join(rootDir, 'source', 'maps', 'outlines')
 const defaultEnvFile = path.join(rootDir, '.env')
 
 require('dotenv').config(defaultEnvFile)
@@ -260,7 +261,12 @@ MapWriter.prototype.buildCallout = function (callout) {
 
   switch (calloutType) {
     case 'path':
-      innerContent = `${callout.pathMarkup}`
+      const pathName = callout.pathMarkup
+      const pathMarkupFile = path.join(outlinesDir, pathName)
+
+      const pathContents = fs.readFileSync(pathMarkupFile)
+
+      innerContent = `${pathContents}`
       break
     default:
     case 'text':
@@ -286,6 +292,28 @@ MapWriter.prototype.buildCalloutsGroup = function () {
   return `\n${start}\n${middle}\n${end}\n`
 }
 
+MapWriter.prototype.buildLegend = function () {
+  const hasLegend = typeof this.mapData.legend === 'object'
+  if (!hasLegend) {
+    return ''
+  }
+
+  const legendData = this.mapData.legend[this.options.calloutLanguage]
+  let innerContent = ''
+
+  legendData.forEach(function (item, index) {
+    const isFirstLine = index === 0
+    const key = item.key
+    const value = item.value
+    const legendMarkup = `<tspan x="0" dy="${isFirstLine ? '0' : '1.1em'}">${key} = ${value}</tspan>`
+    innerContent = `${innerContent}${legendMarkup}`
+  })
+
+  const legendString = `<g id="legend" transform="translate(800 950)" class="callout anchor-left large" style=""><text>
+    ${innerContent}\n</text></g>`
+  return legendString
+}
+
 MapWriter.prototype.buildContents = function () {
   return this.buildXMLMeta()
     + this.buildSVGRoot()
@@ -295,6 +323,7 @@ MapWriter.prototype.buildContents = function () {
     + this.buildEmblem()
     + this.buildCalloutsGroup()
     + this.buildDevelopmentNotice()
+    + this.buildLegend()
     + '\n</svg>'
 }
 
