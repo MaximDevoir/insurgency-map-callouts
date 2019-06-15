@@ -40,15 +40,16 @@ svg {
 
 .path {
   color: #fff93652;
-  stroke: #ffe529a3;
+  stroke: #fff829e0;
   stroke-width: 1px;
   /* TODO: drop shadow or something to soften the edges */
 }
 
 .night .path {
   color: #c9ffb852;
-  stroke: #c9ffb8;
+  stroke: #bef2aec9;
 }
+
 /* Shares all properties and values with `.hide`. This style should be placed at
  *  the top-most node of a callout. See `.hide` for more info.
  */
