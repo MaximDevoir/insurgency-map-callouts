@@ -45,6 +45,10 @@ svg {
   /* TODO: drop shadow or something to soften the edges */
 }
 
+.path__solid-fill {
+  color: #fff93924;
+}
+
 .night .path {
   color: #c9ffb852;
   stroke: #bef2aec9;
