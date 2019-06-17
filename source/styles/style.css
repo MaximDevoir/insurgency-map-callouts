@@ -49,9 +49,13 @@ svg {
   color: #fff93924;
 }
 
+.night .path__solid-fill {
+  color: #39ff6d0f;
+}
+
 .night .path {
   color: #c9ffb852;
-  stroke: #bef2aec9;
+  stroke: #b3ffa980;
 }
 
 /* Shares all properties and values with `.hide`. This style should be placed at
