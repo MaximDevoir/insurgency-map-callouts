@@ -45,6 +45,14 @@ svg {
   /* TODO: drop shadow or something to soften the edges */
 }
 
+.kandagal .path {
+  stroke: #ffe461b8;
+}
+
+.kandagal .path__solid-fill {
+  color: #ffe461;
+  opacity: 0.1;
+}
 .path__solid-fill {
   color: #fff93924;
 }
