@@ -46,13 +46,28 @@ svg {
 }
 
 .kandagal .path {
-  stroke: #ffe461b8;
+  color: transparent !important;
+  stroke: #00b33fc7;
+  stroke-width: 4px;
+}
+
+.kandagal.night .path {
+  stroke: #ff0d0d85;
 }
 
 .kandagal .path__solid-fill {
   color: #ffe461;
   opacity: 0.1;
 }
+
+.revolt .path {
+  stroke: #b1b1b18a;
+}
+
+.revolt .path__solid-fill {
+  color: #a8a8a838;
+}
+
 .path__solid-fill {
   color: #fff93924;
 }
