@@ -4,7 +4,7 @@
 > texture mod for the Steam Workshop.
 
 View the released mod at the
-[Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1690177643)
+[Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=1776249479)
 
 ## Getting Started
 
