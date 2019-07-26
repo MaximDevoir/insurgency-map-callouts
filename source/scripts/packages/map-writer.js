@@ -177,7 +177,7 @@ MapWriter.prototype.buildMapGroup = function () {
 }
 
 MapWriter.prototype.buildEmblem = function () {
-  const size = this.options.writeForProduction ? [100, 110] : [150, 150]
+  const size = this.options.writeForProduction ? [86, 95] : [150, 150]
 
   return `<g id="emblem" class="emblem">
     <image y="21" x="21" preserveAspectRatio="none"
