@@ -160,9 +160,11 @@ MapWriter.prototype.getOverviewImagePath = function () {
 }
 
 MapWriter.prototype.getEmblemImagePath = function () {
+  const emblemFile = this.options.writeForProduction ? 'emblem-hi.png' : 'qr-of-public-version.png'
+
   return path.relative(
     this.options.writeDir,
-    path.join(sourceDir, 'maps', 'emblem', 'emblem.png')
+    path.join(sourceDir, 'maps', 'emblem', emblemFile)
   )
 }
 
@@ -175,9 +177,11 @@ MapWriter.prototype.buildMapGroup = function () {
 }
 
 MapWriter.prototype.buildEmblem = function () {
+  const size = this.options.writeForProduction ? [100, 110] : [150, 150]
+
   return `<g id="emblem" class="emblem">
     <image y="21" x="21" preserveAspectRatio="none"
-      height="93" width="93"
+      height="${size[0]}" width="${size[1]}"
       href="${this.getEmblemImagePath()}" />
   </g>`
 }
@@ -187,7 +191,11 @@ MapWriter.prototype.buildDevelopmentNotice = function () {
     return ''
   }
 
-  return '<g><text class="callout anchor-right development_notice" x="1004" y="24">DEVELOPMENT MODE </text></g>'
+  return '<g><text class="callout anchor-right development_notice" x="1004" y="24">DEVELOPMENT MODE </text>'
+    + '<text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="50">Use QR code or</text>'
+    +'<text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="75">https://steamcommunity.com/sharedfiles/filedetails/?id=1776249479</text>'
+    +'<text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="100">for officially released version</text>'
+    + '</g>'
 }
 
 // eslint-disable-next-line no-underscore-dangle
