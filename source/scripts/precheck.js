@@ -72,7 +72,7 @@ function checkArch(nextCheck) {
     inquirer.prompt([{
       type: 'confirm',
       name: 'continueWithoutArchCompat',
-      message: `Do you want to continue with the installation anyways?`,
+      message: 'Do you want to continue with the installation anyways?',
       default: false
     }]).then(answer => {
       if (!answer.continueWithoutArchCompat) {
