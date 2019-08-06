@@ -47,7 +47,7 @@ function checkOS(nextCheck) {
     inquirer.prompt([{
       type: 'confirm',
       name: 'continueWithoutOSCompat',
-      message: `Do you want to continue with the installation anyways?`,
+      message: 'Do you want to continue with the installation anyways?',
       default: false
     }]).then(answer => {
       if (!answer.continueWithoutOSCompat) {
