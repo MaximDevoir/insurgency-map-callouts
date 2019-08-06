@@ -24,7 +24,7 @@ console.log('Running Preinstall checklists')
 const checks = [
   checkOS,
   checkArch,
-  checkVTFLib,
+  checkVTFLib
 ]
 
 const seriesChecks = checks.reduceRight((prevChecks, curCheck) => {
