@@ -155,7 +155,8 @@ function checkVTFLib(nextCheck) {
       process.stdout.write('Downloading binaries')
       download(libBinariesURL, defaultVTFDir, {
         extract: true,
-        strip: 1 }).then(() => {
+      strip: 1
+    }).then(() => {
           process.stdout.write('... ' + chalk.green('Download complete, \n'))
 
           const updateResult = updateVTF_CMD()
