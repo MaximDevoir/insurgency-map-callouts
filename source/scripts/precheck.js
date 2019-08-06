@@ -104,7 +104,7 @@ function updateVTF_CMD() {
 
   const currentEnv = require('dotenv').config({ path: defaultEnvFile }).parsed
 
-  if (currentEnv['VTF_CMD'] === vtfLibPath) {
+  if (currentEnv.VTF_CMD === vtfLibPath) {
     return 2
   }
 
