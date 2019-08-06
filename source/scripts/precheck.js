@@ -82,7 +82,6 @@ function checkArch(nextCheck) {
       return (typeof nextCheck === 'function' && nextCheck(), undefined)
     })
   } else {
-
     process.stdout.write('. ' + chalk.green(`Architecture ${arch()} is compatible.\n`))
 
     return (typeof nextCheck === 'function' && nextCheck(), undefined)
