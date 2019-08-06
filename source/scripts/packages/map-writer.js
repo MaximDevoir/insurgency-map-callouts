@@ -191,10 +191,10 @@ MapWriter.prototype.buildDevelopmentNotice = function () {
     return ''
   }
 
-  return '<g><text class="callout anchor-right development_notice" x="1004" y="24">DEVELOPMENT MODE </text>'
-    + '<text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="50">Use QR code or</text>'
+  return '<g><text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="25">DEVELOPMENT MODE </text>'
+    + '<text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="50">Use QR code or visit</text>'
     +'<text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="75">https://steamcommunity.com/sharedfiles/filedetails/?id=1776249479</text>'
-    +'<text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="100">for officially released version</text>'
+    +'<text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="100">to subscribe to the official mod</text>'
     + '</g>'
 }
 
