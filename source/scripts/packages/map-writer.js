@@ -1,6 +1,6 @@
-/* eslint-disable no-case-declarations */
 'use strict'
 
+/* eslint-disable no-case-declarations */
 /* eslint-disable no-underscore-dangle, func-names */
 const fs = require('fs-extra')
 const path = require('path')
@@ -193,8 +193,8 @@ MapWriter.prototype.buildDevelopmentNotice = function () {
 
   return '<g><text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="25">DEVELOPMENT MODE </text>'
     + '<text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="50">Use QR code or visit</text>'
-    +'<text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="75">https://steamcommunity.com/sharedfiles/filedetails/?id=1776249479</text>'
-    +'<text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="100">to subscribe to the official mod</text>'
+    + '<text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="75">https://steamcommunity.com/sharedfiles/filedetails/?id=1776249479</text>'
+    + '<text class="callout anchor-right development_notice" style="font-size: 1.9em !important;" x="1004" y="100">to subscribe to the official mod</text>'
     + '</g>'
 }
 
