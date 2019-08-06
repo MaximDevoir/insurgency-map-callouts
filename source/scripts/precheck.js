@@ -139,7 +139,7 @@ function checkVTFLib(nextCheck) {
     inquirer.prompt([{
       type: 'confirm',
       name: 'downloadVTFLib',
-      message: `Would you like to download the required VTFLib binaries now?`,
+    message: 'Would you like to download the required VTFLib binaries now?',
       default: true
     }]).then(answer => {
       if (!answer.downloadVTFLib) {
