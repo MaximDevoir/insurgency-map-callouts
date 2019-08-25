@@ -1,5 +1,10 @@
 # Map Callouts
 
+![Steam File Size](https://img.shields.io/steam/size/1776249479?style=for-the-badge)
+![Steam Views](https://img.shields.io/steam/views/1776249479?style=for-the-badge)
+![Steam Downloads](https://img.shields.io/steam/downloads/1776249479?style=for-the-badge)
+![Steam Subscriptions](https://img.shields.io/steam/subscriptions/1776249479?style=for-the-badge)
+
 > A package that simplifies the many steps that go into creating a map overviews
 > texture mod for the Steam Workshop.
 
