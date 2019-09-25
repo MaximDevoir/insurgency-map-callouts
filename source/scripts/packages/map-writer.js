@@ -177,7 +177,11 @@ MapWriter.prototype.buildMapGroup = function () {
 }
 
 MapWriter.prototype.buildEmblem = function () {
-  const size = this.options.writeForProduction ? [86, 95] : [150, 150]
+  // 616 and 678 are the width and height of the `emblem-hi.jpg` - the emblem
+  // used in production.
+  const size = this.options.writeForProduction
+    ? [(616 * 0.16).toString(), (678 * 0.16).toString()]
+    : [150, 150]
 
   return `<g id="emblem" class="emblem">
     <image y="16" x="13"
