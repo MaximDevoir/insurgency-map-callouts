@@ -180,7 +180,7 @@ MapWriter.prototype.buildEmblem = function () {
   const size = this.options.writeForProduction ? [86, 95] : [150, 150]
 
   return `<g id="emblem" class="emblem">
-    <image y="21" x="21" preserveAspectRatio="none"
+    <image y="16" x="13"
       height="${size[0]}" width="${size[1]}"
       href="${this.getEmblemImagePath()}" />
   </g>`
