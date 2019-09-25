@@ -184,7 +184,7 @@ MapWriter.prototype.buildEmblem = function () {
     : [150, 150]
 
   return `<g id="emblem" class="emblem">
-    <image y="16" x="13"
+    <image y="21" x="16"
       height="${size[0]}" width="${size[1]}"
       href="${this.getEmblemImagePath()}" />
   </g>`
