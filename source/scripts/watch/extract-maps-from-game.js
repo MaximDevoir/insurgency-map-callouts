@@ -1,6 +1,6 @@
 const chalk = require('chalk')
 const path = require('path')
-const execSync = require('child_process').execSync
+const crossSpawn = require('cross-spawn')
 const detectNewline = require('detect-newline')
 
 const scriptsDir = path.dirname(require.main.filename)
@@ -12,19 +12,24 @@ function extractMapsFromGame(nextStep) {
 
   process.stdout.write('\n\nExtracting maps from VTF\n')
   process.stdout.write('[' + chalk.keyword('yellow')('info') + `] executing ${execString}\n`)
+  console.log()
+  console.log(sourceDir)
+  console.log(extractMapsFile)
 
-  const ret = execSync(execString, {
-    cwd: sourceDir
-  }).toString()
+  const ret = crossSpawn.sync('node', [extractMapsFile], {
+    cwd: sourceDir,
+    stdio: 'inherit'
+  })
 
-  const EOLSymbol = detectNewline(ret)
+  // not required when stdio is `inherit`
+  // const EOLSymbol = detectNewline.graceful(ret.stdout.toString())
 
-  const retLines = ret.split(EOLSymbol)
+  // const retLines = ret.split(EOLSymbol)
 
-  // eslint-disable-next-line no-restricted-syntax
-  for (const line of retLines) {
-    process.stdout.write('[' + chalk.blue('exec') + `] ${line}\n`)
-  }
+  // // eslint-disable-next-line no-restricted-syntax
+  // for (const line of retLines) {
+  //   process.stdout.write('[' + chalk.blue('exec') + `] ${line}\n`)
+  // }
 
   if (typeof nextStep === 'function') {
     nextStep()

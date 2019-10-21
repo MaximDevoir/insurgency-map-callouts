@@ -15,12 +15,27 @@ require('dotenv').config(defaultEnvFile)
 
 const modName = process.env.MOD_NAME
 const GAME_LOCATION = process.env.GAME_LOCATION
-const VPK = path.join(GAME_LOCATION, 'bin', 'vpk.exe')
+
+let VPK
+if (process.platform === 'linux') {
+  VPK = 'vpk'
+} else {
+  VPK = path.join(GAME_LOCATION, 'bin', 'vpk.exe')
+}
+
 const BUILD_FOR_PRODUCTION = process.env.BUILD_FOR_PRODUCTION.toLowerCase() === 'true' || false
 
 function generateVPK(next) {
   const modDir = path.join(buildDir, modName)
-  const execString = `"${VPK}" "${modDir}"`
+  const generatedVPKPath = path.join(buildDir, `${modName}.vpk`)
+
+  let execString
+
+  if (process.platform === 'linux') {
+    execString = `vpk --create "${modDir}" "${generatedVPKPath}"`
+  } else {
+    execString = `"${VPK}" "${modDir}"`
+  }
 
   process.stdout.write('\n\nGenerating VPK\n')
 
@@ -38,6 +53,19 @@ function generateVPK(next) {
 
     const retLines = ret.split(EOLSymbol)
 
+    if (process.platform === 'linux') {
+      process.stdout.write('[' + chalk.blue('exec') + `] Linux VPK variant does not output information. \n`)
+      const vpkContents = exec(`vpk -la "${generatedVPKPath}"`, {
+        cwd: modDir
+      }).toString()
+      const EOLSymbol2 = detectNewline(vpkContents)
+
+      const retLines2 = vpkContents.split(EOLSymbol2)
+      // eslint-disable-next-line no-restricted-syntax
+      for (const line of retLines2) {
+        process.stdout.write('[' + chalk.blue('exec') + `] ${line}\n`)
+      }
+    }
     // eslint-disable-next-line no-restricted-syntax
     for (const line of retLines) {
       process.stdout.write('[' + chalk.blue('exec') + `] ${line}\n`)
@@ -56,7 +84,6 @@ function generateVPK(next) {
   if (BUILD_FOR_PRODUCTION === false) {
     process.stdout.write('\n[' + chalk.keyword('yellow')('info') + '] BUILD_FOR_PRODUCTION is FALSE\n')
     process.stdout.write('[' + chalk.keyword('yellow')('info') + '] Amending development tag to filename.\n')
-    const generatedVPKPath = path.join(buildDir, `${modName}.vpk`)
     const developmentVPKPath = path.join(buildDir, `development-${modName}.vpk`)
 
     fs.renameSync(generatedVPKPath, developmentVPKPath)

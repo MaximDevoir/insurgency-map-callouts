@@ -4,6 +4,7 @@ const os = require('os')
 const path = require('path')
 const exec = require('child_process').execFile
 const execSync = require('child_process').execFileSync
+const crossSpawn = require('cross-spawn')
 const chalk = require('chalk')
 const glob = require('glob')
 const which = require('which')
@@ -93,9 +94,24 @@ function extractImageFromVTFS(overviewsDir) {
 
   vtfs.forEach(vtfFile => {
     process.stdout.write('Creating image for map ' + path.basename(vtfFile, '.vtf'))
+    // const args = [
+    //   '-file', `"${vtfFile}"`,
+    //   // '-output', '""',
+    //   '-exportformat', '"jpg"'
+    // ]
+    // console.log('args', args)
+    // console.log('cwd', overviewsDir)
+    // console.log('all together now')
+    // console.log([VTF_CMD, ...args].join(' '))
+    // console.log()
     try {
+    //   crossSpawn.sync(VTF_CMD, args, {
+    //     cwd: overviewsDir,
+    //     stdio: 'inherit'
+    //   })
       childProcess.execSync(`${VTF_CMD} -file "${vtfFile}" -output "" -exportformat "jpg"`, {
-        cwd: overviewsDir
+        cwd: overviewsDir,
+        stdio: 'inherit'
       })
     } catch (error) {
       throw error
@@ -106,7 +122,7 @@ function extractImageFromVTFS(overviewsDir) {
 }
 
 function verifyVTFCmdInstalled() {
-  console.log('Verifying uf VTF Cmd is installed')
+  console.log('Verifying that VTF Cmd is installed')
 
   if (fs.existsSync(VTF_CMD) !== true || path.basename(VTF_CMD).toLowerCase() !== 'vtfcmd.exe') {
     console.log(chalk.red('The environment variable "VTF_CMD" does not point to a file named "vtfcmd.exe"'))
