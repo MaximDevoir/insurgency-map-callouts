@@ -13,6 +13,14 @@ View the released mod at the
 
 ## Getting Started
 
+### Map Source Submodule
+
+Install the maps source submodule. Once you've cloned the repository, run:
+
+```bash
+git submodule update --init --recursive
+```
+
 ### Installation
 
 **Note**: Ensure you have all the [`prerequisites`](#prerequisites) and have set
