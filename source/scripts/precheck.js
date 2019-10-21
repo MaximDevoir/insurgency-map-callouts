@@ -42,7 +42,7 @@ function checkOS(nextCheck) {
 
   const platform = os.platform()
 
-  if (platform !== 'win32') {
+  if (platform !== 'win32' && platform !== 'linux') {
     process.stdout.write('. ' + chalk.red(`Platform (${platform}) not compatible.\n`))
 
     inquirer.prompt([{
@@ -134,50 +134,57 @@ function checkVTFLib(nextCheck) {
     }
 
     return (typeof nextCheck === 'function' && nextCheck(), undefined)
-  } else {
-    process.stdout.write('. ' + chalk.red(`Could not discover VTFLib binaries.\n`))
+  }
+  process.stdout.write('. ' + chalk.red(`Could not discover VTFLib binaries.\n`))
 
-    inquirer.prompt([{
-      type: 'confirm',
-      name: 'downloadVTFLib',
+  inquirer.prompt([{
+    type: 'confirm',
+    name: 'downloadVTFLib',
     message: 'Would you like to download the required VTFLib binaries now?',
-      default: true
-    }]).then(answer => {
-      if (!answer.downloadVTFLib) {
-        process.stdout.write(chalk.magenta('You must manually set VTF_CMD in your `.env` file.\n'))
-
-        process.exit(1)
-        return (typeof nextCheck === 'function' && nextCheck(), undefined)
+    default: true,
+    when: (answers) => {
+      if (process.env.CI === 'true') {
+        answers.downloadVTFLib = true
+        return false
       }
+      return true
+    }
+  }]).then(answer => {
+    if (!answer.downloadVTFLib) {
+      process.stdout.write(chalk.magenta('You must manually set VTF_CMD in your `.env` file.\n'))
 
-      const libBinariesURL = 'http://nemesis.thewavelength.net/files/files/vtflib132-bin.zip'
+      process.exit(1)
+      return (typeof nextCheck === 'function' && nextCheck(), undefined)
+    }
 
-      process.stdout.write('Downloading binaries')
-      download(libBinariesURL, defaultVTFDir, {
-        extract: true,
+    const libBinariesURL = 'http://nemesis.thewavelength.net/files/files/vtflib132-bin.zip'
+
+    process.stdout.write('Downloading binaries')
+    download(libBinariesURL, defaultVTFDir, {
+      extract: true,
       strip: 1
     }).then(() => {
       shelljs.chmod('+x', path.join(defaultVTFDir, arch(), '*'))
-          process.stdout.write('... ' + chalk.green('Download complete, \n'))
+      process.stdout.write('... ' + chalk.green('Download complete, \n'))
 
-          const updateResult = updateVTF_CMD()
-          if (updateResult === false) {
-            process.stdout.write(chalk.red('Unable to automatically update VTF_CMD.\n'))
-            process.stdout.write(chalk.red('You must manually link to your VTF_CMD in your `.env` file.\n'))
+      const updateResult = updateVTF_CMD()
+      if (updateResult === false) {
+        process.stdout.write(chalk.red('Unable to automatically update VTF_CMD.\n'))
+        process.stdout.write(chalk.red('You must manually link to your VTF_CMD in your `.env` file.\n'))
 
-            return
-          } else if (updateResult === 2) {
-            process.stdout.write('[f2] Detected old reference of VTF_CMD in your .env file. '
-              + chalk.green('Updated VTF_CMD in your .env file.\n'))
-          }
-        }).catch(err => {
-          console.error(`\n${err}: Unable to download VTF Libraries.`)
-          console.log('You must manually link to your VTF_CMD in your `.env` file.')
-        }).finally(() => {
-          return (typeof nextCheck === 'function' && nextCheck(), undefined)
-        })
+        return
+      // eslint-disable-next-line no-else-return
+      } else if (updateResult === 2) {
+        process.stdout.write('[f2] Detected old reference of VTF_CMD in your .env file. '
+          + chalk.green('Updated VTF_CMD in your .env file.\n'))
+      }
+    }).catch(err => {
+      console.error(`\n${err}: Unable to download VTF Libraries.`)
+      console.log('You must manually link to your VTF_CMD in your `.env` file.')
+    }).finally(() => {
+      return (typeof nextCheck === 'function' && nextCheck(), undefined)
     })
-  }
+  })
 }
 
 function isVTFLibInstalled() {
