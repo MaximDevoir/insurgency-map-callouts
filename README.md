@@ -92,6 +92,13 @@ system.
 * [Yarn](https://yarnpkg.com/lang/en/docs/install/), while **not required**, is
   recommended if you decide to contribute to the software.
 
+## Running on Linux
+
+Requires Wine.
+
+Requires Wine to be linked as an interpreter. See
+https://unix.stackexchange.com/a/304152
+
 ## Environment Variables
 
 Environment variables are variables that are set the project's `.env` file.
