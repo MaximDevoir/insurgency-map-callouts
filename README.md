@@ -54,6 +54,11 @@ system.
 
 #### Windows
 
+* Contains Calibri font family.
+* Using Calibri in compiled builds requires Windows 10 Pro to comply with the
+  font license (see [font redistribution
+  FAQs](https://docs.microsoft.com/en-us/typography/fonts/font-faq)).
+
 #### Web Browser
 
 * The most recent version of popular web browser.
