@@ -10,6 +10,7 @@ const inquirer = require('inquirer')
 const isDirectory = require('is-directory')
 const isFile = require('is-file')
 const download = require('download')
+const shelljs = require('shelljs')
 
 const envWriteSync = require('./env-write')
 
@@ -156,6 +157,7 @@ function checkVTFLib(nextCheck) {
         extract: true,
       strip: 1
     }).then(() => {
+      shelljs.chmod('+x', path.join(defaultVTFDir, arch(), '*'))
           process.stdout.write('... ' + chalk.green('Download complete, \n'))
 
           const updateResult = updateVTF_CMD()
