@@ -249,9 +249,15 @@ MapWriter.prototype._calcFinalTranslate = function (callout) {
 
 MapWriter.prototype.buildCallout = function (callout) {
   const buildingNightMap = this.options.writeNightVariant
-  let styleString = callout.styleString || ''
+  // styleString is set to callout.stylestring (default='') with the conditional
+  // style string for night variant (default='')
+  let styleString = (callout.styleString || '') + ((buildingNightMap && callout.night && ';' + callout.night.styleString) || '')
   const calloutType = callout.type || 'text'
-  const rotateInt = callout.rotate.length ? callout.rotate : '0'
+  let rotateInt = '0'
+  if (callout.rotate.length) rotateInt = callout.rotate
+  if (buildingNightMap && callout.night && callout.night.rotate && callout.night.rotate.length) {
+    rotateInt = callout.night.rotate
+  }
   const transformString = `translate(${this._calcFinalTranslate(callout)})`
     + ` rotate(${rotateInt})`
   let classString = classNames(callout.classNames, {
