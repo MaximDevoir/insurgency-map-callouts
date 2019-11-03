@@ -13,6 +13,9 @@ const defaultEnvFile = path.join(rootDir, '.env')
 
 require('dotenv').config(defaultEnvFile)
 
+/**
+ * Generates a mod structure from staged VTFs and translation files.
+ */
 function generateModStructure(next) {
   const modName = process.env.MOD_NAME
   const modDir = path.join(buildDir, modName)
@@ -25,7 +28,6 @@ function generateModStructure(next) {
     fs.ensureDirSync(overviewsDir)
 
     const vtfList = maps.getStagedVTFSync()
-
     // eslint-disable-next-line no-restricted-syntax
     for (const vtfFile of vtfList) {
       const vtfName = path.basename(vtfFile)
@@ -36,6 +38,11 @@ function generateModStructure(next) {
 
       process.stdout.write('[' + chalk.green('success') + ']' + postMessage)
     }
+
+    fs.copySync(
+      maps.translationsDirExternal,
+      modDir
+    )
   } catch (err) {
     console.log('Failed in generateModStructure')
     throw err

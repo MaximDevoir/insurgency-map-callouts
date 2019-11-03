@@ -1,0 +1,14 @@
+{
+  "file": {
+    "resource": "insurgency_misc_dir.vpk",
+    "path": ["resource", "insurgency_english.txt"]
+  },
+  "tokens": [
+    {
+      "key_path": ["game_description_ambush"],
+      "value": [
+        "Hello from Seattle."
+      ]
+    }
+  ]
+}

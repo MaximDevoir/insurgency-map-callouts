@@ -7,6 +7,8 @@ const rootDir = path.join(scriptsDir, '..', '..')
 const externalDir = path.join(rootDir, 'source', 'external')
 const mapsDirectory = path.join(rootDir, 'source', 'maps')
 const mapsDirectoryStaged = path.join(rootDir, 'build', 'staged', 'maps')
+const translationsDir = path.join(rootDir, 'source', 'translations')
+const translationsDirExternal = path.join(externalDir, 'translations')
 
 /**
  * @returns {string[]} List of all the JSON maps in source/maps
@@ -20,6 +22,24 @@ function getSync() {
 function get(callback) {
   return glob(path.join(mapsDirectory, '*.json'), callback)
 }
+
+/**
+ * Returns a list of JSON translation files.
+ */
+function getTranslationsSync() {
+  return glob.sync(path.join(translationsDir, '*.json'))
+}
+
+/**
+ * Returns a list of translation files (.txt files in VDF format).
+ *
+ * **How is a staged translation file different?**: A staged translation file is
+ * built in VDF format and is ready to be merged into the mod.
+ */
+function getTranslationsExternalSync() {
+  return glob.sync(path.join(translationsDirExternal, '**', '*.txt'))
+}
+
 
 /**
  * @returns {string[]} List of all SVG maps in source/external/maps
@@ -57,5 +77,8 @@ module.exports = {
   getStagedVTFSync,
   getStagedRasterSync,
   get,
-  getStaged
+  getStaged,
+  getTranslationsSync,
+  getTranslationsExternalSync,
+  translationsDirExternal
 }
