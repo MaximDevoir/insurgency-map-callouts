@@ -34,6 +34,7 @@
     "is-directory": "^0.3.1",
     "is-file": "^1.0.0",
     "js-beautify": "^1.9.0",
+    "parse-kv": "^0.3.1",
     "pretty-data2": "^0.40.1",
     "replace-in-file": "^3.4.4",
     "shelljs": "^0.8.3",
