@@ -5,6 +5,7 @@ const ensureBuildDirectories = require('./compile/ensure-directories')
 const convertMapsToVTF = require('./compile/convert-to-vtf')
 const cleanBuildDirectories = require('./compile/clean-old-build')
 const generateModStructure = require('./compile/generate-mod-structure')
+const buildTranslations = require('./packages/build-translations')
 const generateVPK = require('./compile/generate-vpk')
 const verifyVPK = require('./compile/verify-vpk')
 const stageImages = require('./compile/stage-images')
@@ -19,6 +20,7 @@ const buildSteps = [
   stageImages,
   rasterizeMaps,
   convertMapsToVTF,
+  buildTranslations,
   generateModStructure,
   generateVPK,
   verifyVPK,

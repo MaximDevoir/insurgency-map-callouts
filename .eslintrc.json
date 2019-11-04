@@ -9,6 +9,7 @@
   "rules": {
     "semi": [2, "never"],
     "no-unused-vars": "warn",
+    "no-console": "off",
     "no-use-before-define": "warn"
   }
 }
