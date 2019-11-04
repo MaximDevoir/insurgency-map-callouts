@@ -4,7 +4,6 @@ const chalk = require('chalk')
 const fs = require('fs-extra')
 const which = require('which')
 const detectNewline = require('detect-newline')
-const parseKV = require('parse-kv')
 const vdf = require('simple-vdf')
 
 const maps = require('./maps')
