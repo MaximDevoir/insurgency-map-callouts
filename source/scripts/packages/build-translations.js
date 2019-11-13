@@ -146,7 +146,23 @@ function buildTranslation(translationPath) {
   process.stdout.write('[' + chalk.keyword('green')('success') + `] Updated translation for ${path.basename(extractedResourcePath)}\n`)
 }
 
+function gotoNext(next) {
+  const callNext = typeof next === 'function'
+
+  if (callNext) {
+    console.log('[' + chalk.keyword('yellow')('info') + '] Executing next step')
+    return (callNext && next(), undefined)
+  }
+
+  return undefined
+}
+
 async function buildTranslations(next) {
+  if (true) {
+    console.log('[' + chalk.keyword('yellow')('info') + '] Translations are not supported.')
+    return gotoNext(next)
+  }
+
   process.stdout.write('\n\nBuilding translations\n')
 
   const translationsList = maps.getTranslationsSync()
@@ -156,14 +172,7 @@ async function buildTranslations(next) {
     buildTranslation(translation)
   }
 
-  const callNext = typeof next === 'function'
-
-  if (callNext) {
-    console.log('[' + chalk.keyword('yellow')('info') + '] Executing next step')
-    return (callNext && next(), undefined)
-  }
-
-  return undefined
+  return gotoNext(next)
 }
 
 module.exports = buildTranslations
