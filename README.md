@@ -15,10 +15,18 @@ View the released mod at the
 
 ### Map Source Submodule
 
+#### Run only once
+
 Install the maps source submodule. Once you've cloned the repository, run:
 
 ```bash
 git submodule update --init --recursive
+```
+
+#### Update submodule
+
+```bash
+git submodule update --remote
 ```
 
 ### Installation
