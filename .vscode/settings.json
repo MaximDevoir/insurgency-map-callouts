@@ -1,0 +1,7 @@
+{
+  "liveshare.shareExternalFiles": false,
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.fullReload": false,
+  "liveServer.settings.ignoreFiles":["**"],
+  "liveServer.settings.root": "/source"
+}

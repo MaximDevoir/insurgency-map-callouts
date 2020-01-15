@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/vsls",
+  "hideFiles": [
+    "scripts",
+    "outlines",
+    "emblem",
+    "styles",
+    "translations",
+    "artwork",
+    "yarn.lock",
+    "package.json",
+    ".*"
+  ]
+}
