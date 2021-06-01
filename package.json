@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "cross-env BUILD_FOR_PRODUCTION=true node source/scripts/build.js",
+    "clean": "rm -rf source/externals && rm -rf node_modules && rm -rf build",
     "devBuild": "cross-env BUILD_FOR_PRODUCTION=false node source/scripts/build.js",
     "preinstall": "node source/scripts/preinstall.js",
     "prestart": "node source/scripts/precheck.js",

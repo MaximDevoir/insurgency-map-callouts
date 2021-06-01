@@ -158,14 +158,13 @@ function checkVTFLib(nextCheck) {
     }
 
     const libBinariesURL = 'http://nemesis.thewavelength.net/files/files/vtflib132-bin.zip'
-
+    const libBinariesURLArchive = 'https://web.archive.org/web/20191223154323if_/http://nemesis.thewavelength.net/files/files/vtflib132-bin.zip'
     process.stdout.write('Downloading binaries')
-    download(libBinariesURL, defaultVTFDir, {
-      extract: true,
-      strip: 1
-    }).then(() => {
-      shelljs.chmod('+x', path.join(defaultVTFDir, arch(), '*'))
+    download(libBinariesURLArchive, defaultVTFDir, {
+      extract: true
+    }).then((files) => {
       process.stdout.write('... ' + chalk.green('Download complete, \n'))
+      shelljs.chmod('+x', path.join(defaultVTFDir, 'bin', arch(), '*'))
 
       const updateResult = updateVTF_CMD()
       if (updateResult === false) {
@@ -223,7 +222,7 @@ function discoverVTFLibExecPath(vtflibFolder) {
     return null
   }
 
-  const archDir = path.join(vtflibFolder, arch())
+  const archDir = path.join(vtflibFolder, 'bin', arch())
 
   if (!isDirectory.sync(archDir)) {
     return null

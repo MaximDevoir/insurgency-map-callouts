@@ -38,11 +38,6 @@ function generateModStructure(next) {
 
       process.stdout.write('[' + chalk.green('success') + ']' + postMessage)
     }
-
-    fs.copySync(
-      maps.translationsDirExternal,
-      modDir
-    )
   } catch (err) {
     console.log('Failed in generateModStructure')
     throw err
